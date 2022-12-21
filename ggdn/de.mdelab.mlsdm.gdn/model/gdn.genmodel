@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/de.mdelab.mlsdm.gdn/src" modelPluginID="de.mdelab.mlsdm.gdn"
+    modelName="Gdn" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0" copyrightFields="false"
+    usedGenPackages="../../de.mdelab.mlcore/model/mlcore.genmodel#//mlcore ../../de.mdelab.mlexpressions/model/mlexpressions.genmodel#//mlexpressions ../../de.mdelab.mlstorypatterns/model/mlstorypatterns.genmodel#//mlstorypatterns"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>gdn.ecore</foreignModel>
+  <genPackages prefix="Gdn" basePackage="de.mdelab.mlsdm" disposableProviderFactory="true"
+      ecorePackage="gdn.ecore#/">
+    <genClasses ecoreClass="gdn.ecore#//GDNNode">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference gdn.ecore#//GDNNode/dependencies"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference gdn.ecore#//GDNNode/pattern"/>
+    </genClasses>
+    <genClasses ecoreClass="gdn.ecore#//GDNDependency">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference gdn.ecore#//GDNDependency/node"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference gdn.ecore#//GDNDependency/indexConstraint"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference gdn.ecore#//GDNDependency/mappings"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute gdn.ecore#//GDNDependency/negative"/>
+    </genClasses>
+    <genClasses ecoreClass="gdn.ecore#//GDNMapping">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference gdn.ecore#//GDNMapping/parentVertex"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference gdn.ecore#//GDNMapping/childVertex"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute gdn.ecore#//GDNMapping/indexPosition"/>
+    </genClasses>
+    <genClasses ecoreClass="gdn.ecore#//GDN">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference gdn.ecore#//GDN/ownedNodes"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference gdn.ecore#//GDN/root"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ecore2java.generated:ecore2javaOperationalTGG xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore2java.generated="http://www.mdelab.de/mltgg/ecore2java/1.0/generated" tggID="ecore2java">
+  <operationalAxiomGroup xsi:type="ecore2java.generated:ecore2javaAxiom" ruleGroupID="ecore2javaAxiom">
+    <axioms xsi:type="ecore2java.generated:ecore2javaAxiom_r1" ruleID="r1">
+      <addElementActivity href="modelGeneration/ecore2javaAxiom_r1_addElement.mlsdm#_msEHpyk1Ee2B0tdKr_FYJg"/>
+      <changeAttributeActivity href="modelGeneration/ecore2javaAxiom_r1_changeAttributeValues.mlsdm#_ms2IgCk1Ee2B0tdKr_FYJg"/>
+      <transformForwardActivity href="modelTransformation/ecore2javaAxiom_r1_transform_forward.mlsdm#_ms82MCk1Ee2B0tdKr_FYJg"/>
+      <transformMappingActivity href="modelTransformation/ecore2javaAxiom_r1_transform_mapping.mlsdm#_mtMGwCk1Ee2B0tdKr_FYJg"/>
+      <transformBackwardActivity href="modelTransformation/ecore2javaAxiom_r1_transform_backward.mlsdm#_mtS0cCk1Ee2B0tdKr_FYJg"/>
+      <synchronizeForwardActivity href="modelSynchronization/ecore2javaAxiom_r1_synchronize_forward.mlsdm#_mtaJMCk1Ee2B0tdKr_FYJg"/>
+      <synchronizeBackwardActivity href="modelSynchronization/ecore2javaAxiom_r1_synchronize_backward.mlsdm#_mtpZwCk1Ee2B0tdKr_FYJg"/>
+    </axioms>
+  </operationalAxiomGroup>
+  <operationalRuleGroups xsi:type="ecore2java.generated:ecore2javaClassRule" ruleGroupID="ecore2javaClassRule">
+    <rules xsi:type="ecore2java.generated:ecore2javaClassRule_r1" ruleID="r1">
+      <preferredInputCorrNodeTypes href="http://www.mdelab.de/mltgg/ecore2java/1.0#//CorrAxiom"/>
+      <allInputCorrNodeTypes href="http://www.mdelab.de/mltgg/ecore2java/1.0#//CorrAxiom"/>
+      <addElementActivity href="modelGeneration/ecore2javaClassRule_r1_addElement.mlsdm#_mtx8oCk1Ee2B0tdKr_FYJg"/>
+      <moveElementActivity href="modelGeneration/ecore2javaClassRule_r1_moveElement.mlsdm#_mt2OECk1Ee2B0tdKr_FYJg"/>
+      <changeAttributeActivity href="modelGeneration/ecore2javaClassRule_r1_changeAttributeValues.mlsdm#_mt54cCk1Ee2B0tdKr_FYJg"/>
+      <transformForwardActivity href="modelTransformation/ecore2javaClassRule_r1_transform_forward.mlsdm#_mt9i0Ck1Ee2B0tdKr_FYJg"/>
+      <transformMappingActivity href="modelTransformation/ecore2javaClassRule_r1_transform_mapping.mlsdm#_muDpcCk1Ee2B0tdKr_FYJg"/>
+      <transformBackwardActivity href="modelTransformation/ecore2javaClassRule_r1_transform_backward.mlsdm#_muH64Ck1Ee2B0tdKr_FYJg"/>
+      <conflictCheckForwardActivity href="conflictCheck/ecore2javaClassRule_r1_conflictCheck_forward.mlsdm#_muNacCk1Ee2B0tdKr_FYJg"/>
+      <conflictCheckMappingActivity href="conflictCheck/ecore2javaClassRule_r1_conflictCheck_mapping.mlsdm#_muaOwCk1Ee2B0tdKr_FYJg"/>
+      <conflictCheckBackwardActivity href="conflictCheck/ecore2javaClassRule_r1_conflictCheck_backward.mlsdm#_muegMCk1Ee2B0tdKr_FYJg"/>
+      <synchronizeForwardActivity href="modelSynchronization/ecore2javaClassRule_r1_synchronize_forward.mlsdm#_mur7kCk1Ee2B0tdKr_FYJg"/>
+      <synchronizeBackwardActivity href="modelSynchronization/ecore2javaClassRule_r1_synchronize_backward.mlsdm#_muwNACk1Ee2B0tdKr_FYJg"/>
+      <repairForwardActivity href="modelSynchronization/ecore2javaClassRule_r1_repair_forward.mlsdm#_mu26sCk1Ee2B0tdKr_FYJg"/>
+      <repairBackwardActivity href="modelSynchronization/ecore2javaClassRule_r1_repair_backward.mlsdm#_mu7zMCk1Ee2B0tdKr_FYJg"/>
+    </rules>
+  </operationalRuleGroups>
+  <operationalRuleGroups xsi:type="ecore2java.generated:ecore2javaAttributeRule" ruleGroupID="ecore2javaAttributeRule">
+    <rules xsi:type="ecore2java.generated:ecore2javaAttributeRule_r1" ruleID="r1">
+      <preferredInputCorrNodeTypes href="http://www.mdelab.de/mltgg/ecore2java/1.0#//CorrClass"/>
+      <allInputCorrNodeTypes href="http://www.mdelab.de/mltgg/ecore2java/1.0#//CorrClass"/>
+      <addElementActivity href="modelGeneration/ecore2javaAttributeRule_r1_addElement.mlsdm#_mvEWECk1Ee2B0tdKr_FYJg"/>
+      <moveElementActivity href="modelGeneration/ecore2javaAttributeRule_r1_moveElement.mlsdm#_mvIAcCk1Ee2B0tdKr_FYJg"/>
+      <changeAttributeActivity href="modelGeneration/ecore2javaAttributeRule_r1_changeAttributeValues.mlsdm#_mvLDwCk1Ee2B0tdKr_FYJg"/>
+      <transformForwardActivity href="modelTransformation/ecore2javaAttributeRule_r1_transform_forward.mlsdm#_mvPVMCk1Ee2B0tdKr_FYJg"/>
+      <transformMappingActivity href="modelTransformation/ecore2javaAttributeRule_r1_transform_mapping.mlsdm#_mvS_kCk1Ee2B0tdKr_FYJg"/>
+      <transformBackwardActivity href="modelTransformation/ecore2javaAttributeRule_r1_transform_backward.mlsdm#_mvXRACk1Ee2B0tdKr_FYJg"/>
+      <conflictCheckForwardActivity href="conflictCheck/ecore2javaAttributeRule_r1_conflictCheck_forward.mlsdm#_mvbicCk1Ee2B0tdKr_FYJg"/>
+      <conflictCheckMappingActivity href="conflictCheck/ecore2javaAttributeRule_r1_conflictCheck_mapping.mlsdm#_mvfM0Ck1Ee2B0tdKr_FYJg"/>
+      <conflictCheckBackwardActivity href="conflictCheck/ecore2javaAttributeRule_r1_conflictCheck_backward.mlsdm#_mvksYCk1Ee2B0tdKr_FYJg"/>
+      <synchronizeForwardActivity href="modelSynchronization/ecore2javaAttributeRule_r1_synchronize_forward.mlsdm#_mvpk4Ck1Ee2B0tdKr_FYJg"/>
+      <synchronizeBackwardActivity href="modelSynchronization/ecore2javaAttributeRule_r1_synchronize_backward.mlsdm#_mvudYCk1Ee2B0tdKr_FYJg"/>
+      <repairForwardActivity href="modelSynchronization/ecore2javaAttributeRule_r1_repair_forward.mlsdm#_mvz88Ck1Ee2B0tdKr_FYJg"/>
+      <repairBackwardActivity href="modelSynchronization/ecore2javaAttributeRule_r1_repair_backward.mlsdm#_mv8f0Ck1Ee2B0tdKr_FYJg"/>
+    </rules>
+  </operationalRuleGroups>
+</ecore2java.generated:ecore2javaOperationalTGG>

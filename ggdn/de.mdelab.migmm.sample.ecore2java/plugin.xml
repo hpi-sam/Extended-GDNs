@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?eclipse version="3.0"?><!--
+--><plugin>
+                               
+   
+   
+   
+   
+   
+   
+    <extension point="org.eclipse.emf.ecore.generated_package">
+              
+        <!-- @generated ecore2java -->
+              
+        <package class="de.mdelab.migmm.sample.ecore2java.Ecore2javaPackage" genModel="model-gen/model/ecore2java.genmodel" uri="http://www.mdelab.de/mltgg/ecore2java/1.0"/>
+           
+    </extension>
+                               
+   
+   
+   
+   
+   
+   
+    <extension point="org.eclipse.emf.ecore.generated_package">
+              
+        <!-- @generated ecore2java -->
+              
+        <package class="de.mdelab.migmm.sample.ecore2java.generated.GeneratedPackage" genModel="model-gen/model/ecore2java.genmodel" uri="http://www.mdelab.de/mltgg/ecore2java/1.0/generated"/>
+           
+    </extension>
+                            
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <extension point="de.mdelab.mltgg.mote2.eclipse.rules">
+        <rules configurationFileURI="model-gen/config.xmi" tggID="ecore2java"/>
+    </extension>
+</plugin>

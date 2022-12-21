@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mltgg:TGG xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:mlexpressions="http://www.mdelab.de/mlexpressions/1.0" xmlns:mltgg="http://www.mdelab.de/mltgg/1.0" uuid="_An6LwD8fEeKTTbcgLXf6Gw" name="ecore2java" tggID="ecore2java">
+  <ruleGroups uuid="_BBH9AD8fEeKTTbcgLXf6Gw" name="ecore2javaAxiom" ruleGroupID="ecore2javaAxiom" isAxiom="true">
+    <rules uuid="_EWn5MT8fEeKTTbcgLXf6Gw" name="r1" leftInputElements="_HmOBsT8fEeKTTbcgLXf6Gw" rightInputElements="_WyPf8T8fEeKTTbcgLXf6Gw" ruleID="r1">
+      <leftModelDomain uuid="_F4J9YT8fEeKTTbcgLXf6Gw">
+        <modelObjects uuid="_HmOBsT8fEeKTTbcgLXf6Gw" modifier="CREATE" incomingCorrespondenceLink="_Z6WgYj8fEeKTTbcgLXf6Gw" name="ePackage">
+          <type xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EPackage"/>
+          <attributeAssignments uuid="_XO74UMCjEeyjDqfhaHcnTg">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_Y444sMCjEeyjDqfhaHcnTg" expressionString="name" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http://www.eclipse.org/emf/2002/Ecore#//ENamedElement/name"/>
+          </attributeAssignments>
+        </modelObjects>
+      </leftModelDomain>
+      <rightModelDomain uuid="_GUAy8j8fEeKTTbcgLXf6Gw">
+        <modelObjects uuid="_WyPf8T8fEeKTTbcgLXf6Gw" modifier="CREATE" incomingCorrespondenceLink="_bI1Fsj8fEeKTTbcgLXf6Gw" name="pkg" outgoingLinks="_StVK0MCiEeyjDqfhaHcnTg _XGnfQMCiEeyjDqfhaHcnTg _ti30cMCjEeyjDqfhaHcnTg _Lb-8wMClEeyjDqfhaHcnTg">
+          <type xsi:type="ecore:EClass" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//Package"/>
+          <attributeAssignments uuid="_a_zh4MCjEeyjDqfhaHcnTg">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_cgwXQMCjEeyjDqfhaHcnTg" expressionString="name" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//NamedElement/name"/>
+          </attributeAssignments>
+        </modelObjects>
+        <modelObjects uuid="_FUT7QMCiEeyjDqfhaHcnTg" modifier="CREATE" incomingCorrespondenceLink="_fPo00MCiEeyjDqfhaHcnTg" name="implPackage" outgoingLinks="_3bsBwMClEeyjDqfhaHcnTg _dgrb0MCmEeyjDqfhaHcnTg" incomingLinks="_StVK0MCiEeyjDqfhaHcnTg">
+          <type xsi:type="ecore:EClass" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//Package"/>
+          <attributeAssignments uuid="_dvpzUMCjEeyjDqfhaHcnTg">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_fCzdQMCjEeyjDqfhaHcnTg" expressionString="'impl'" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//NamedElement/name"/>
+          </attributeAssignments>
+        </modelObjects>
+        <modelObjects uuid="_U_bJQMCiEeyjDqfhaHcnTg" modifier="CREATE" incomingCorrespondenceLink="_emDFQMCiEeyjDqfhaHcnTg" name="utilPackage" outgoingLinks="_rEqv0MCnEeyjDqfhaHcnTg _9yQQUMCnEeyjDqfhaHcnTg" incomingLinks="_XGnfQMCiEeyjDqfhaHcnTg">
+          <type xsi:type="ecore:EClass" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//Package"/>
+          <attributeAssignments uuid="_gM-xYMCjEeyjDqfhaHcnTg">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_hDb4QMCjEeyjDqfhaHcnTg" expressionString="'util'" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//NamedElement/name"/>
+          </attributeAssignments>
+        </modelObjects>
+        <modelObjects uuid="_P5k0UMCjEeyjDqfhaHcnTg" modifier="CREATE" incomingCorrespondenceLink="_w5o78MCjEeyjDqfhaHcnTg" name="factoryInterface" incomingLinks="_ti30cMCjEeyjDqfhaHcnTg _OJn80MCnEeyjDqfhaHcnTg">
+          <type xsi:type="ecore:EClass" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//InterfaceDeclaration"/>
+          <attributeAssignments uuid="_z_Fp8MCjEeyjDqfhaHcnTg">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_1mrS0MCjEeyjDqfhaHcnTg" expressionString="name.substring(1, 1).toUpper()&#xD;&#xA;&#x9;.concat(name.substring(2, name.size()))&#xD;&#xA;&#x9;.concat('Factory')" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//NamedElement/name"/>
+          </attributeAssignments>
+        </modelObjects>
+        <modelObjects uuid="_EFi6sMClEeyjDqfhaHcnTg" modifier="CREATE" incomingCorrespondenceLink="_0OJuwMClEeyjDqfhaHcnTg" name="packageInterface" incomingLinks="_Lb-8wMClEeyjDqfhaHcnTg _dUin0MCnEeyjDqfhaHcnTg">
+          <type xsi:type="ecore:EClass" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//InterfaceDeclaration"/>
+          <attributeAssignments uuid="_Xu4RwMClEeyjDqfhaHcnTg">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_ZN2KIMClEeyjDqfhaHcnTg" expressionString="name.substring(1, 1).toUpper()&#xD;&#xA;&#x9;.concat(name.substring(2, name.size()))&#xD;&#xA;&#x9;.concat('Package')" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//NamedElement/name"/>
+          </attributeAssignments>
+        </modelObjects>
+        <modelObjects uuid="_ww5kwMClEeyjDqfhaHcnTg" modifier="CREATE" incomingCorrespondenceLink="_1zxowMClEeyjDqfhaHcnTg" name="factoryImpl" outgoingLinks="__S7OUMCmEeyjDqfhaHcnTg" incomingLinks="_3bsBwMClEeyjDqfhaHcnTg">
+          <type xsi:type="ecore:EClass" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//ClassDeclaration"/>
+          <attributeAssignments uuid="_8ih_wMClEeyjDqfhaHcnTg">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_97PfIMClEeyjDqfhaHcnTg" expressionString="name.substring(1, 1).toUpper()&#xD;&#xA;&#x9;.concat(name.substring(2, name.size()))&#xD;&#xA;&#x9;.concat('FactoryImpl')" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//NamedElement/name"/>
+          </attributeAssignments>
+        </modelObjects>
+        <modelObjects uuid="_Z-w0QMCmEeyjDqfhaHcnTg" modifier="CREATE" incomingCorrespondenceLink="_cW-o0MCmEeyjDqfhaHcnTg" name="packageImpl" outgoingLinks="_YUo_UMCnEeyjDqfhaHcnTg" incomingLinks="_dgrb0MCmEeyjDqfhaHcnTg">
+          <type xsi:type="ecore:EClass" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//ClassDeclaration"/>
+          <attributeAssignments uuid="_p-QW0MCmEeyjDqfhaHcnTg">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_raZksMCmEeyjDqfhaHcnTg" expressionString="name.substring(1, 1).toUpper()&#xD;&#xA;&#x9;.concat(name.substring(2, name.size()))&#xD;&#xA;&#x9;.concat('PackageImpl')" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//NamedElement/name"/>
+          </attributeAssignments>
+        </modelObjects>
+        <modelObjects uuid="_8OKc0MCmEeyjDqfhaHcnTg" modifier="CREATE" incomingCorrespondenceLink="_M9s8QMCnEeyjDqfhaHcnTg" name="factoryTA" outgoingLinks="_OJn80MCnEeyjDqfhaHcnTg" incomingLinks="__S7OUMCmEeyjDqfhaHcnTg">
+          <type xsi:type="ecore:EClass" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//TypeAccess"/>
+        </modelObjects>
+        <modelObjects uuid="_Vq-1cMCnEeyjDqfhaHcnTg" modifier="CREATE" incomingCorrespondenceLink="_clxdUMCnEeyjDqfhaHcnTg" name="packageTA" outgoingLinks="_dUin0MCnEeyjDqfhaHcnTg" incomingLinks="_YUo_UMCnEeyjDqfhaHcnTg">
+          <type xsi:type="ecore:EClass" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//TypeAccess"/>
+        </modelObjects>
+        <modelObjects uuid="_oA-VUMCnEeyjDqfhaHcnTg" modifier="CREATE" incomingCorrespondenceLink="_yUw5UMCnEeyjDqfhaHcnTg" name="adapterFactory" incomingLinks="_rEqv0MCnEeyjDqfhaHcnTg">
+          <type xsi:type="ecore:EClass" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//ClassDeclaration"/>
+          <attributeAssignments uuid="_siIMUMCnEeyjDqfhaHcnTg">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_tyrOMMCnEeyjDqfhaHcnTg" expressionString="name.substring(1, 1).toUpper()&#xD;&#xA;&#x9;.concat(name.substring(2, name.size()))&#xD;&#xA;&#x9;.concat('AdapterFactory')" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//NamedElement/name"/>
+          </attributeAssignments>
+        </modelObjects>
+        <modelObjects uuid="_0v8iUMCnEeyjDqfhaHcnTg" modifier="CREATE" incomingCorrespondenceLink="_AYRQUMCoEeyjDqfhaHcnTg" name="switch" incomingLinks="_9yQQUMCnEeyjDqfhaHcnTg">
+          <type xsi:type="ecore:EClass" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//ClassDeclaration"/>
+          <attributeAssignments uuid="_CRusUMCoEeyjDqfhaHcnTg">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_DhlxsMCoEeyjDqfhaHcnTg" expressionString="name.substring(1, 1).toUpper()&#xD;&#xA;&#x9;.concat(name.substring(2, name.size()))&#xD;&#xA;&#x9;.concat('Switch')" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//NamedElement/name"/>
+          </attributeAssignments>
+        </modelObjects>
+        <modelLinks uuid="_StVK0MCiEeyjDqfhaHcnTg" modifier="CREATE" incomingCorrespondenceLink="_dFw-QMCiEeyjDqfhaHcnTg" source="_WyPf8T8fEeKTTbcgLXf6Gw" target="_FUT7QMCiEeyjDqfhaHcnTg">
+          <feature xsi:type="ecore:EReference" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//Package/ownedPackages"/>
+        </modelLinks>
+        <modelLinks uuid="_XGnfQMCiEeyjDqfhaHcnTg" modifier="CREATE" incomingCorrespondenceLink="_duqxUMCiEeyjDqfhaHcnTg" source="_WyPf8T8fEeKTTbcgLXf6Gw" target="_U_bJQMCiEeyjDqfhaHcnTg">
+          <feature xsi:type="ecore:EReference" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//Package/ownedPackages"/>
+        </modelLinks>
+        <modelLinks uuid="_ti30cMCjEeyjDqfhaHcnTg" modifier="CREATE" incomingCorrespondenceLink="_wjIgcMCjEeyjDqfhaHcnTg" source="_WyPf8T8fEeKTTbcgLXf6Gw" target="_P5k0UMCjEeyjDqfhaHcnTg">
+          <feature xsi:type="ecore:EReference" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//Package/ownedElements"/>
+        </modelLinks>
+        <modelLinks uuid="_Lb-8wMClEeyjDqfhaHcnTg" modifier="CREATE" incomingCorrespondenceLink="_zGvawMClEeyjDqfhaHcnTg" source="_WyPf8T8fEeKTTbcgLXf6Gw" target="_EFi6sMClEeyjDqfhaHcnTg">
+          <feature xsi:type="ecore:EReference" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//Package/ownedElements"/>
+        </modelLinks>
+        <modelLinks uuid="_3bsBwMClEeyjDqfhaHcnTg" modifier="CREATE" incomingCorrespondenceLink="_6DnGQMClEeyjDqfhaHcnTg" source="_FUT7QMCiEeyjDqfhaHcnTg" target="_ww5kwMClEeyjDqfhaHcnTg">
+          <feature xsi:type="ecore:EReference" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//Package/ownedElements"/>
+        </modelLinks>
+        <modelLinks uuid="_dgrb0MCmEeyjDqfhaHcnTg" modifier="CREATE" incomingCorrespondenceLink="_f-h-UMCmEeyjDqfhaHcnTg" source="_FUT7QMCiEeyjDqfhaHcnTg" target="_Z-w0QMCmEeyjDqfhaHcnTg">
+          <feature xsi:type="ecore:EReference" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//Package/ownedElements"/>
+        </modelLinks>
+        <modelLinks uuid="__S7OUMCmEeyjDqfhaHcnTg" modifier="CREATE" incomingCorrespondenceLink="_MRTwUMCnEeyjDqfhaHcnTg" source="_ww5kwMClEeyjDqfhaHcnTg" target="_8OKc0MCmEeyjDqfhaHcnTg">
+          <feature xsi:type="ecore:EReference" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//AbstractTypeDeclaration/superInterfaces"/>
+        </modelLinks>
+        <modelLinks uuid="_OJn80MCnEeyjDqfhaHcnTg" modifier="CREATE" incomingCorrespondenceLink="_Ral-UMCnEeyjDqfhaHcnTg" source="_8OKc0MCmEeyjDqfhaHcnTg" target="_P5k0UMCjEeyjDqfhaHcnTg">
+          <feature xsi:type="ecore:EReference" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//TypeAccess/type"/>
+        </modelLinks>
+        <modelLinks uuid="_YUo_UMCnEeyjDqfhaHcnTg" modifier="CREATE" incomingCorrespondenceLink="_bQoPUMCnEeyjDqfhaHcnTg" source="_Z-w0QMCmEeyjDqfhaHcnTg" target="_Vq-1cMCnEeyjDqfhaHcnTg">
+          <feature xsi:type="ecore:EReference" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//AbstractTypeDeclaration/superInterfaces"/>
+        </modelLinks>
+        <modelLinks uuid="_dUin0MCnEeyjDqfhaHcnTg" modifier="CREATE" incomingCorrespondenceLink="_fGhi0MCnEeyjDqfhaHcnTg" source="_Vq-1cMCnEeyjDqfhaHcnTg" target="_EFi6sMClEeyjDqfhaHcnTg">
+          <feature xsi:type="ecore:EReference" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//TypeAccess/type"/>
+        </modelLinks>
+        <modelLinks uuid="_rEqv0MCnEeyjDqfhaHcnTg" modifier="CREATE" incomingCorrespondenceLink="_xd1RUMCnEeyjDqfhaHcnTg" source="_U_bJQMCiEeyjDqfhaHcnTg" target="_oA-VUMCnEeyjDqfhaHcnTg">
+          <feature xsi:type="ecore:EReference" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//Package/ownedElements"/>
+        </modelLinks>
+        <modelLinks uuid="_9yQQUMCnEeyjDqfhaHcnTg" modifier="CREATE" incomingCorrespondenceLink="__wdCYMCnEeyjDqfhaHcnTg" source="_U_bJQMCiEeyjDqfhaHcnTg" target="_0v8iUMCnEeyjDqfhaHcnTg">
+          <feature xsi:type="ecore:EReference" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//Package/ownedElements"/>
+        </modelLinks>
+      </rightModelDomain>
+      <correspondenceDomain uuid="_GqCGQz8fEeKTTbcgLXf6Gw">
+        <correspondenceNodes uuid="_YbWLwT8fEeKTTbcgLXf6Gw" modifier="CREATE" name="corrAxiom" outgoingLinks="_Z6WgYj8fEeKTTbcgLXf6Gw _bI1Fsj8fEeKTTbcgLXf6Gw _dFw-QMCiEeyjDqfhaHcnTg _duqxUMCiEeyjDqfhaHcnTg _emDFQMCiEeyjDqfhaHcnTg _fPo00MCiEeyjDqfhaHcnTg _wjIgcMCjEeyjDqfhaHcnTg _w5o78MCjEeyjDqfhaHcnTg _zGvawMClEeyjDqfhaHcnTg _0OJuwMClEeyjDqfhaHcnTg _1zxowMClEeyjDqfhaHcnTg _6DnGQMClEeyjDqfhaHcnTg _cW-o0MCmEeyjDqfhaHcnTg _f-h-UMCmEeyjDqfhaHcnTg _MRTwUMCnEeyjDqfhaHcnTg _M9s8QMCnEeyjDqfhaHcnTg _Ral-UMCnEeyjDqfhaHcnTg _bQoPUMCnEeyjDqfhaHcnTg _clxdUMCnEeyjDqfhaHcnTg _fGhi0MCnEeyjDqfhaHcnTg _xd1RUMCnEeyjDqfhaHcnTg _yUw5UMCnEeyjDqfhaHcnTg __wdCYMCnEeyjDqfhaHcnTg _AYRQUMCoEeyjDqfhaHcnTg">
+          <type xsi:type="ecore:EClass" href="ecore2java.ecore#//CorrAxiom"/>
+        </correspondenceNodes>
+        <correspondenceLinks uuid="_Z6WgYj8fEeKTTbcgLXf6Gw" modifier="CREATE" source="_YbWLwT8fEeKTTbcgLXf6Gw" target="_HmOBsT8fEeKTTbcgLXf6Gw"/>
+        <correspondenceLinks uuid="_bI1Fsj8fEeKTTbcgLXf6Gw" modifier="CREATE" source="_YbWLwT8fEeKTTbcgLXf6Gw" target="_WyPf8T8fEeKTTbcgLXf6Gw"/>
+        <correspondenceLinks uuid="_dFw-QMCiEeyjDqfhaHcnTg" modifier="CREATE" source="_YbWLwT8fEeKTTbcgLXf6Gw" target="_StVK0MCiEeyjDqfhaHcnTg"/>
+        <correspondenceLinks uuid="_duqxUMCiEeyjDqfhaHcnTg" modifier="CREATE" source="_YbWLwT8fEeKTTbcgLXf6Gw" target="_XGnfQMCiEeyjDqfhaHcnTg"/>
+        <correspondenceLinks uuid="_emDFQMCiEeyjDqfhaHcnTg" modifier="CREATE" source="_YbWLwT8fEeKTTbcgLXf6Gw" target="_U_bJQMCiEeyjDqfhaHcnTg"/>
+        <correspondenceLinks uuid="_fPo00MCiEeyjDqfhaHcnTg" modifier="CREATE" source="_YbWLwT8fEeKTTbcgLXf6Gw" target="_FUT7QMCiEeyjDqfhaHcnTg"/>
+        <correspondenceLinks uuid="_wjIgcMCjEeyjDqfhaHcnTg" modifier="CREATE" source="_YbWLwT8fEeKTTbcgLXf6Gw" target="_ti30cMCjEeyjDqfhaHcnTg"/>
+        <correspondenceLinks uuid="_w5o78MCjEeyjDqfhaHcnTg" modifier="CREATE" source="_YbWLwT8fEeKTTbcgLXf6Gw" target="_P5k0UMCjEeyjDqfhaHcnTg"/>
+        <correspondenceLinks uuid="_zGvawMClEeyjDqfhaHcnTg" modifier="CREATE" source="_YbWLwT8fEeKTTbcgLXf6Gw" target="_Lb-8wMClEeyjDqfhaHcnTg"/>
+        <correspondenceLinks uuid="_0OJuwMClEeyjDqfhaHcnTg" modifier="CREATE" source="_YbWLwT8fEeKTTbcgLXf6Gw" target="_EFi6sMClEeyjDqfhaHcnTg"/>
+        <correspondenceLinks uuid="_1zxowMClEeyjDqfhaHcnTg" modifier="CREATE" source="_YbWLwT8fEeKTTbcgLXf6Gw" target="_ww5kwMClEeyjDqfhaHcnTg"/>
+        <correspondenceLinks uuid="_6DnGQMClEeyjDqfhaHcnTg" modifier="CREATE" source="_YbWLwT8fEeKTTbcgLXf6Gw" target="_3bsBwMClEeyjDqfhaHcnTg"/>
+        <correspondenceLinks uuid="_cW-o0MCmEeyjDqfhaHcnTg" modifier="CREATE" source="_YbWLwT8fEeKTTbcgLXf6Gw" target="_Z-w0QMCmEeyjDqfhaHcnTg"/>
+        <correspondenceLinks uuid="_f-h-UMCmEeyjDqfhaHcnTg" modifier="CREATE" source="_YbWLwT8fEeKTTbcgLXf6Gw" target="_dgrb0MCmEeyjDqfhaHcnTg"/>
+        <correspondenceLinks uuid="_MRTwUMCnEeyjDqfhaHcnTg" modifier="CREATE" source="_YbWLwT8fEeKTTbcgLXf6Gw" target="__S7OUMCmEeyjDqfhaHcnTg"/>
+        <correspondenceLinks uuid="_M9s8QMCnEeyjDqfhaHcnTg" modifier="CREATE" source="_YbWLwT8fEeKTTbcgLXf6Gw" target="_8OKc0MCmEeyjDqfhaHcnTg"/>
+        <correspondenceLinks uuid="_Ral-UMCnEeyjDqfhaHcnTg" modifier="CREATE" source="_YbWLwT8fEeKTTbcgLXf6Gw" target="_OJn80MCnEeyjDqfhaHcnTg"/>
+        <correspondenceLinks uuid="_bQoPUMCnEeyjDqfhaHcnTg" modifier="CREATE" source="_YbWLwT8fEeKTTbcgLXf6Gw" target="_YUo_UMCnEeyjDqfhaHcnTg"/>
+        <correspondenceLinks uuid="_clxdUMCnEeyjDqfhaHcnTg" modifier="CREATE" source="_YbWLwT8fEeKTTbcgLXf6Gw" target="_Vq-1cMCnEeyjDqfhaHcnTg"/>
+        <correspondenceLinks uuid="_fGhi0MCnEeyjDqfhaHcnTg" modifier="CREATE" source="_YbWLwT8fEeKTTbcgLXf6Gw" target="_dUin0MCnEeyjDqfhaHcnTg"/>
+        <correspondenceLinks uuid="_xd1RUMCnEeyjDqfhaHcnTg" modifier="CREATE" source="_YbWLwT8fEeKTTbcgLXf6Gw" target="_rEqv0MCnEeyjDqfhaHcnTg"/>
+        <correspondenceLinks uuid="_yUw5UMCnEeyjDqfhaHcnTg" modifier="CREATE" source="_YbWLwT8fEeKTTbcgLXf6Gw" target="_oA-VUMCnEeyjDqfhaHcnTg"/>
+        <correspondenceLinks uuid="__wdCYMCnEeyjDqfhaHcnTg" modifier="CREATE" source="_YbWLwT8fEeKTTbcgLXf6Gw" target="_9yQQUMCnEeyjDqfhaHcnTg"/>
+        <correspondenceLinks uuid="_AYRQUMCoEeyjDqfhaHcnTg" modifier="CREATE" source="_YbWLwT8fEeKTTbcgLXf6Gw" target="_0v8iUMCnEeyjDqfhaHcnTg"/>
+      </correspondenceDomain>
+      <ruleParameters uuid="_gv_NQMCiEeyjDqfhaHcnTg" name="name">
+        <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        <forwardCalculationExpression xsi:type="mlexpressions:MLStringExpression" uuid="_it9V0MCiEeyjDqfhaHcnTg" expressionString="ePackage.name" expressionLanguageID="OCL"/>
+        <backwardCalculationExpression xsi:type="mlexpressions:MLStringExpression" uuid="_jHq2UMCiEeyjDqfhaHcnTg" expressionString="pkg.name" expressionLanguageID="OCL"/>
+      </ruleParameters>
+    </rules>
+  </ruleGroups>
+  <ruleGroups uuid="_eLflcT8fEeKTTbcgLXf6Gw" name="ecore2javaClassRule" ruleGroupID="ecore2javaClassRule">
+    <rules uuid="_gg3hYT8fEeKTTbcgLXf6Gw" name="r1" ruleID="r1">
+      <leftModelDomain uuid="_iin9wT8fEeKTTbcgLXf6Gw">
+        <modelObjects uuid="_jzwOcT8fEeKTTbcgLXf6Gw" incomingCorrespondenceLink="_onHPwj8fEeKTTbcgLXf6Gw" name="ePackage" outgoingLinks="_ycmJMMCzEeyjDqfhaHcnTg">
+          <type xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EPackage"/>
+        </modelObjects>
+        <modelObjects uuid="_wbvEsMCzEeyjDqfhaHcnTg" modifier="CREATE" incomingCorrespondenceLink="_3jNdsMCzEeyjDqfhaHcnTg" name="eClass" incomingLinks="_ycmJMMCzEeyjDqfhaHcnTg">
+          <type xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+          <attributeAssignments uuid="_V0PzQMC0EeyjDqfhaHcnTg">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_W4_NwMC0EeyjDqfhaHcnTg" expressionString="name" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http://www.eclipse.org/emf/2002/Ecore#//ENamedElement/name"/>
+          </attributeAssignments>
+        </modelObjects>
+        <modelLinks uuid="_ycmJMMCzEeyjDqfhaHcnTg" modifier="CREATE" incomingCorrespondenceLink="_2wPIoMCzEeyjDqfhaHcnTg" source="_jzwOcT8fEeKTTbcgLXf6Gw" target="_wbvEsMCzEeyjDqfhaHcnTg">
+          <feature xsi:type="ecore:EReference" href="http://www.eclipse.org/emf/2002/Ecore#//EPackage/eClassifiers"/>
+        </modelLinks>
+      </leftModelDomain>
+      <rightModelDomain uuid="_jH51Ej8fEeKTTbcgLXf6Gw">
+        <modelObjects uuid="_lDWOET8fEeKTTbcgLXf6Gw" incomingCorrespondenceLink="_pWk90j8fEeKTTbcgLXf6Gw" name="pkg" outgoingLinks="_AZsWMMC0EeyjDqfhaHcnTg _f-bvUMC0EeyjDqfhaHcnTg _AyYREMC2EeyjDqfhaHcnTg">
+          <type xsi:type="ecore:EClass" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//Package"/>
+        </modelObjects>
+        <modelObjects uuid="_9onVsMCzEeyjDqfhaHcnTg" modifier="CREATE" incomingCorrespondenceLink="_LiXTwMC0EeyjDqfhaHcnTg" name="interface" incomingLinks="_AZsWMMC0EeyjDqfhaHcnTg _RrD9wMIcEeyaBsJX2bRgqw _QQlg8MC1EeyjDqfhaHcnTg _wqfN4MIdEeyaBsJX2bRgqw">
+          <type xsi:type="ecore:EClass" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//InterfaceDeclaration"/>
+          <attributeAssignments uuid="_aJptQMC0EeyjDqfhaHcnTg">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_bOToMMC0EeyjDqfhaHcnTg" expressionString="name" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//NamedElement/name"/>
+          </attributeAssignments>
+        </modelObjects>
+        <modelObjects uuid="_eaZwwMC0EeyjDqfhaHcnTg" incomingCorrespondenceLink="_ivzqwMC0EeyjDqfhaHcnTg" name="implPackage" outgoingLinks="_Is8wYMC1EeyjDqfhaHcnTg _e3-2kMISEeyOJJ3inzipPw" incomingLinks="_f-bvUMC0EeyjDqfhaHcnTg">
+          <type xsi:type="ecore:EClass" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//Package"/>
+          <constraints xsi:type="mlexpressions:MLStringExpression" uuid="_j_Ao0MC0EeyjDqfhaHcnTg" expressionString="self.name = 'impl'" expressionLanguageID="OCL"/>
+        </modelObjects>
+        <modelObjects uuid="__hMLcMC0EeyjDqfhaHcnTg" modifier="CREATE" incomingCorrespondenceLink="_UquxAMC1EeyjDqfhaHcnTg" name="impl" outgoingLinks="_OWXP8MC1EeyjDqfhaHcnTg" incomingLinks="_Is8wYMC1EeyjDqfhaHcnTg">
+          <type xsi:type="ecore:EClass" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//ClassDeclaration"/>
+          <attributeAssignments uuid="_BvP-cMC1EeyjDqfhaHcnTg">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_DUZXUMC1EeyjDqfhaHcnTg" expressionString="name.concat('Impl')" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//NamedElement/name"/>
+          </attributeAssignments>
+        </modelObjects>
+        <modelObjects uuid="_MJwOcMC1EeyjDqfhaHcnTg" modifier="CREATE" incomingCorrespondenceLink="_Tdgv8MC1EeyjDqfhaHcnTg" name="ta" outgoingLinks="_QQlg8MC1EeyjDqfhaHcnTg" incomingLinks="_OWXP8MC1EeyjDqfhaHcnTg">
+          <type xsi:type="ecore:EClass" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//TypeAccess"/>
+        </modelObjects>
+        <modelObjects uuid="_v5rOkMC1EeyjDqfhaHcnTg" incomingCorrespondenceLink="_Bdo-0MIaEeyOJJ3inzipPw" name="factoryInterface" outgoingLinks="_9n1K4MIZEeyOJJ3inzipPw" incomingLinks="_AyYREMC2EeyjDqfhaHcnTg">
+          <type xsi:type="ecore:EClass" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//InterfaceDeclaration"/>
+        </modelObjects>
+        <modelObjects uuid="_a1VggMISEeyOJJ3inzipPw" incomingCorrespondenceLink="_CW3s4MIaEeyOJJ3inzipPw" name="factoryImpl" outgoingLinks="_GHwdMMIdEeyaBsJX2bRgqw" incomingLinks="_e3-2kMISEeyOJJ3inzipPw">
+          <type xsi:type="ecore:EClass" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//ClassDeclaration"/>
+        </modelObjects>
+        <modelObjects uuid="_0aGQAMIZEeyOJJ3inzipPw" modifier="CREATE" incomingCorrespondenceLink="_lnfP8MIcEeyaBsJX2bRgqw" name="interfaceMethod" outgoingLinks="_N3JnQMIcEeyaBsJX2bRgqw _xd3BAMIcEeyaBsJX2bRgqw" incomingLinks="_9n1K4MIZEeyOJJ3inzipPw _70Y6gMIdEeyaBsJX2bRgqw">
+          <type xsi:type="ecore:EClass" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//MethodDeclaration"/>
+          <attributeAssignments uuid="_GvXsQMIcEeyaBsJX2bRgqw">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_J-kMIMIcEeyaBsJX2bRgqw" expressionString="'create'.concat(name)" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//NamedElement/name"/>
+          </attributeAssignments>
+        </modelObjects>
+        <modelObjects uuid="_AVrmUMIcEeyaBsJX2bRgqw" modifier="CREATE" incomingCorrespondenceLink="_mYYhYMIcEeyaBsJX2bRgqw" name="interfaceMethodTA" outgoingLinks="_RrD9wMIcEeyaBsJX2bRgqw" incomingLinks="_N3JnQMIcEeyaBsJX2bRgqw">
+          <type xsi:type="ecore:EClass" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//TypeAccess"/>
+        </modelObjects>
+        <modelObjects uuid="_sZwN8MIcEeyaBsJX2bRgqw" modifier="CREATE" incomingCorrespondenceLink="_7MlJEMIcEeyaBsJX2bRgqw" name="interfaceMethodModifier" incomingLinks="_xd3BAMIcEeyaBsJX2bRgqw">
+          <type xsi:type="ecore:EClass" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//Modifier"/>
+          <attributeAssignments uuid="_0E3fgMIcEeyaBsJX2bRgqw">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_1_eLAMIcEeyaBsJX2bRgqw" expressionString="true" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//Modifier/static"/>
+          </attributeAssignments>
+        </modelObjects>
+        <modelObjects uuid="_EKPnoMIdEeyaBsJX2bRgqw" modifier="CREATE" incomingCorrespondenceLink="_ZDUvUMIdEeyaBsJX2bRgqw" name="implMethod" outgoingLinks="_R7-5MMIdEeyaBsJX2bRgqw _reiGYMIdEeyaBsJX2bRgqw _70Y6gMIdEeyaBsJX2bRgqw" incomingLinks="_GHwdMMIdEeyaBsJX2bRgqw">
+          <type xsi:type="ecore:EClass" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//MethodDeclaration"/>
+          <attributeAssignments uuid="_KOg3MMIdEeyaBsJX2bRgqw">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_LmogsMIdEeyaBsJX2bRgqw" expressionString="'create'.concat(name)" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//NamedElement/name"/>
+          </attributeAssignments>
+        </modelObjects>
+        <modelObjects uuid="_QEgaMMIdEeyaBsJX2bRgqw" modifier="CREATE" incomingCorrespondenceLink="_bHKPUMIdEeyaBsJX2bRgqw" name="implMethodModifier" incomingLinks="_R7-5MMIdEeyaBsJX2bRgqw">
+          <type xsi:type="ecore:EClass" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//Modifier"/>
+          <attributeAssignments uuid="_T34lMMIdEeyaBsJX2bRgqw">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_WN4MMMIdEeyaBsJX2bRgqw" expressionString="true" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//Modifier/static"/>
+          </attributeAssignments>
+        </modelObjects>
+        <modelObjects uuid="_neZ40MIdEeyaBsJX2bRgqw" modifier="CREATE" incomingCorrespondenceLink="_qc1_4MIdEeyaBsJX2bRgqw" name="implMethodTA" outgoingLinks="_wqfN4MIdEeyaBsJX2bRgqw" incomingLinks="_reiGYMIdEeyaBsJX2bRgqw">
+          <type xsi:type="ecore:EClass" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//TypeAccess"/>
+        </modelObjects>
+        <modelLinks uuid="_AZsWMMC0EeyjDqfhaHcnTg" modifier="CREATE" incomingCorrespondenceLink="_K3yswMC0EeyjDqfhaHcnTg" source="_lDWOET8fEeKTTbcgLXf6Gw" target="_9onVsMCzEeyjDqfhaHcnTg">
+          <feature xsi:type="ecore:EReference" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//Package/ownedElements"/>
+        </modelLinks>
+        <modelLinks uuid="_f-bvUMC0EeyjDqfhaHcnTg" incomingCorrespondenceLink="_h9xJ0MC0EeyjDqfhaHcnTg" source="_lDWOET8fEeKTTbcgLXf6Gw" target="_eaZwwMC0EeyjDqfhaHcnTg">
+          <feature xsi:type="ecore:EReference" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//Package/ownedPackages"/>
+        </modelLinks>
+        <modelLinks uuid="_Is8wYMC1EeyjDqfhaHcnTg" modifier="CREATE" incomingCorrespondenceLink="_VYM7AMC1EeyjDqfhaHcnTg" source="_eaZwwMC0EeyjDqfhaHcnTg" target="__hMLcMC0EeyjDqfhaHcnTg">
+          <feature xsi:type="ecore:EReference" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//Package/ownedElements"/>
+        </modelLinks>
+        <modelLinks uuid="_OWXP8MC1EeyjDqfhaHcnTg" modifier="CREATE" incomingCorrespondenceLink="_SlIWcMC1EeyjDqfhaHcnTg" source="__hMLcMC0EeyjDqfhaHcnTg" target="_MJwOcMC1EeyjDqfhaHcnTg">
+          <feature xsi:type="ecore:EReference" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//AbstractTypeDeclaration/superInterfaces"/>
+        </modelLinks>
+        <modelLinks uuid="_QQlg8MC1EeyjDqfhaHcnTg" modifier="CREATE" incomingCorrespondenceLink="_UHKw8MC1EeyjDqfhaHcnTg" source="_MJwOcMC1EeyjDqfhaHcnTg" target="_9onVsMCzEeyjDqfhaHcnTg">
+          <feature xsi:type="ecore:EReference" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//TypeAccess/type"/>
+        </modelLinks>
+        <modelLinks uuid="_AyYREMC2EeyjDqfhaHcnTg" incomingCorrespondenceLink="_BGwv4MIaEeyOJJ3inzipPw" source="_lDWOET8fEeKTTbcgLXf6Gw" target="_v5rOkMC1EeyjDqfhaHcnTg">
+          <feature xsi:type="ecore:EReference" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//Package/ownedElements"/>
+        </modelLinks>
+        <modelLinks uuid="_e3-2kMISEeyOJJ3inzipPw" incomingCorrespondenceLink="_B63tYMIaEeyOJJ3inzipPw" source="_eaZwwMC0EeyjDqfhaHcnTg" target="_a1VggMISEeyOJJ3inzipPw">
+          <feature xsi:type="ecore:EReference" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//Package/ownedElements"/>
+        </modelLinks>
+        <modelLinks uuid="_9n1K4MIZEeyOJJ3inzipPw" modifier="CREATE" incomingCorrespondenceLink="_kbbFcMIcEeyaBsJX2bRgqw" source="_v5rOkMC1EeyjDqfhaHcnTg" target="_0aGQAMIZEeyOJJ3inzipPw">
+          <feature xsi:type="ecore:EReference" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//AbstractTypeDeclaration/bodyDeclarations"/>
+        </modelLinks>
+        <modelLinks uuid="_N3JnQMIcEeyaBsJX2bRgqw" modifier="CREATE" incomingCorrespondenceLink="_t3HuYMIdEeyaBsJX2bRgqw" source="_0aGQAMIZEeyOJJ3inzipPw" target="_AVrmUMIcEeyaBsJX2bRgqw">
+          <feature xsi:type="ecore:EReference" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//MethodDeclaration/returnType"/>
+        </modelLinks>
+        <modelLinks uuid="_RrD9wMIcEeyaBsJX2bRgqw" modifier="CREATE" incomingCorrespondenceLink="_nG7pcMIcEeyaBsJX2bRgqw" source="_AVrmUMIcEeyaBsJX2bRgqw" target="_9onVsMCzEeyjDqfhaHcnTg">
+          <feature xsi:type="ecore:EReference" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//TypeAccess/type"/>
+        </modelLinks>
+        <modelLinks uuid="_xd3BAMIcEeyaBsJX2bRgqw" modifier="CREATE" incomingCorrespondenceLink="_6Ug4oMIcEeyaBsJX2bRgqw" source="_0aGQAMIZEeyOJJ3inzipPw" target="_sZwN8MIcEeyaBsJX2bRgqw">
+          <feature xsi:type="ecore:EReference" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//BodyDeclaration/modifier"/>
+        </modelLinks>
+        <modelLinks uuid="_GHwdMMIdEeyaBsJX2bRgqw" modifier="CREATE" incomingCorrespondenceLink="_aR1J0MIdEeyaBsJX2bRgqw" source="_a1VggMISEeyOJJ3inzipPw" target="_EKPnoMIdEeyaBsJX2bRgqw">
+          <feature xsi:type="ecore:EReference" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//AbstractTypeDeclaration/bodyDeclarations"/>
+        </modelLinks>
+        <modelLinks uuid="_R7-5MMIdEeyaBsJX2bRgqw" modifier="CREATE" incomingCorrespondenceLink="_YRuTQMIdEeyaBsJX2bRgqw" source="_EKPnoMIdEeyaBsJX2bRgqw" target="_QEgaMMIdEeyaBsJX2bRgqw">
+          <feature xsi:type="ecore:EReference" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//BodyDeclaration/modifier"/>
+        </modelLinks>
+        <modelLinks uuid="_reiGYMIdEeyaBsJX2bRgqw" modifier="CREATE" incomingCorrespondenceLink="_uwCTYMIdEeyaBsJX2bRgqw" source="_EKPnoMIdEeyaBsJX2bRgqw" target="_neZ40MIdEeyaBsJX2bRgqw">
+          <feature xsi:type="ecore:EReference" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//MethodDeclaration/returnType"/>
+        </modelLinks>
+        <modelLinks uuid="_wqfN4MIdEeyaBsJX2bRgqw" modifier="CREATE" incomingCorrespondenceLink="_z0EN8MIdEeyaBsJX2bRgqw" source="_neZ40MIdEeyaBsJX2bRgqw" target="_9onVsMCzEeyjDqfhaHcnTg">
+          <feature xsi:type="ecore:EReference" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//TypeAccess/type"/>
+        </modelLinks>
+        <modelLinks uuid="_70Y6gMIdEeyaBsJX2bRgqw" modifier="CREATE" incomingCorrespondenceLink="__i4lgMIdEeyaBsJX2bRgqw" source="_EKPnoMIdEeyaBsJX2bRgqw" target="_0aGQAMIZEeyOJJ3inzipPw">
+          <feature xsi:type="ecore:EReference" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//MethodDeclaration/redefinedMethodDeclaration"/>
+        </modelLinks>
+      </rightModelDomain>
+      <correspondenceDomain uuid="_jXSU4z8fEeKTTbcgLXf6Gw">
+        <correspondenceNodes uuid="_mGiwcT8fEeKTTbcgLXf6Gw" name="corrAxiom" outgoingLinks="_onHPwj8fEeKTTbcgLXf6Gw _pWk90j8fEeKTTbcgLXf6Gw _h9xJ0MC0EeyjDqfhaHcnTg _ivzqwMC0EeyjDqfhaHcnTg _BGwv4MIaEeyOJJ3inzipPw _Bdo-0MIaEeyOJJ3inzipPw _B63tYMIaEeyOJJ3inzipPw _CW3s4MIaEeyOJJ3inzipPw">
+          <type xsi:type="ecore:EClass" href="ecore2java.ecore#//CorrAxiom"/>
+        </correspondenceNodes>
+        <correspondenceNodes uuid="_zqzBsMCzEeyjDqfhaHcnTg" modifier="CREATE" name="corrClass" outgoingLinks="_2wPIoMCzEeyjDqfhaHcnTg _3jNdsMCzEeyjDqfhaHcnTg _K3yswMC0EeyjDqfhaHcnTg _LiXTwMC0EeyjDqfhaHcnTg _SlIWcMC1EeyjDqfhaHcnTg _Tdgv8MC1EeyjDqfhaHcnTg _UHKw8MC1EeyjDqfhaHcnTg _UquxAMC1EeyjDqfhaHcnTg _VYM7AMC1EeyjDqfhaHcnTg _kbbFcMIcEeyaBsJX2bRgqw _lnfP8MIcEeyaBsJX2bRgqw _mYYhYMIcEeyaBsJX2bRgqw _nG7pcMIcEeyaBsJX2bRgqw _6Ug4oMIcEeyaBsJX2bRgqw _7MlJEMIcEeyaBsJX2bRgqw _YRuTQMIdEeyaBsJX2bRgqw _ZDUvUMIdEeyaBsJX2bRgqw _aR1J0MIdEeyaBsJX2bRgqw _bHKPUMIdEeyaBsJX2bRgqw _qc1_4MIdEeyaBsJX2bRgqw _t3HuYMIdEeyaBsJX2bRgqw _uwCTYMIdEeyaBsJX2bRgqw _z0EN8MIdEeyaBsJX2bRgqw __i4lgMIdEeyaBsJX2bRgqw">
+          <type xsi:type="ecore:EClass" href="ecore2java.ecore#//CorrClass"/>
+        </correspondenceNodes>
+        <correspondenceLinks uuid="_onHPwj8fEeKTTbcgLXf6Gw" source="_mGiwcT8fEeKTTbcgLXf6Gw" target="_jzwOcT8fEeKTTbcgLXf6Gw"/>
+        <correspondenceLinks uuid="_pWk90j8fEeKTTbcgLXf6Gw" source="_mGiwcT8fEeKTTbcgLXf6Gw" target="_lDWOET8fEeKTTbcgLXf6Gw"/>
+        <correspondenceLinks uuid="_2wPIoMCzEeyjDqfhaHcnTg" modifier="CREATE" source="_zqzBsMCzEeyjDqfhaHcnTg" target="_ycmJMMCzEeyjDqfhaHcnTg"/>
+        <correspondenceLinks uuid="_3jNdsMCzEeyjDqfhaHcnTg" modifier="CREATE" source="_zqzBsMCzEeyjDqfhaHcnTg" target="_wbvEsMCzEeyjDqfhaHcnTg"/>
+        <correspondenceLinks uuid="_K3yswMC0EeyjDqfhaHcnTg" modifier="CREATE" source="_zqzBsMCzEeyjDqfhaHcnTg" target="_AZsWMMC0EeyjDqfhaHcnTg"/>
+        <correspondenceLinks uuid="_LiXTwMC0EeyjDqfhaHcnTg" modifier="CREATE" source="_zqzBsMCzEeyjDqfhaHcnTg" target="_9onVsMCzEeyjDqfhaHcnTg"/>
+        <correspondenceLinks uuid="_h9xJ0MC0EeyjDqfhaHcnTg" source="_mGiwcT8fEeKTTbcgLXf6Gw" target="_f-bvUMC0EeyjDqfhaHcnTg"/>
+        <correspondenceLinks uuid="_ivzqwMC0EeyjDqfhaHcnTg" source="_mGiwcT8fEeKTTbcgLXf6Gw" target="_eaZwwMC0EeyjDqfhaHcnTg"/>
+        <correspondenceLinks uuid="_SlIWcMC1EeyjDqfhaHcnTg" modifier="CREATE" source="_zqzBsMCzEeyjDqfhaHcnTg" target="_OWXP8MC1EeyjDqfhaHcnTg"/>
+        <correspondenceLinks uuid="_Tdgv8MC1EeyjDqfhaHcnTg" modifier="CREATE" source="_zqzBsMCzEeyjDqfhaHcnTg" target="_MJwOcMC1EeyjDqfhaHcnTg"/>
+        <correspondenceLinks uuid="_UHKw8MC1EeyjDqfhaHcnTg" modifier="CREATE" source="_zqzBsMCzEeyjDqfhaHcnTg" target="_QQlg8MC1EeyjDqfhaHcnTg"/>
+        <correspondenceLinks uuid="_UquxAMC1EeyjDqfhaHcnTg" modifier="CREATE" source="_zqzBsMCzEeyjDqfhaHcnTg" target="__hMLcMC0EeyjDqfhaHcnTg"/>
+        <correspondenceLinks uuid="_VYM7AMC1EeyjDqfhaHcnTg" modifier="CREATE" source="_zqzBsMCzEeyjDqfhaHcnTg" target="_Is8wYMC1EeyjDqfhaHcnTg"/>
+        <correspondenceLinks uuid="_BGwv4MIaEeyOJJ3inzipPw" source="_mGiwcT8fEeKTTbcgLXf6Gw" target="_AyYREMC2EeyjDqfhaHcnTg"/>
+        <correspondenceLinks uuid="_Bdo-0MIaEeyOJJ3inzipPw" source="_mGiwcT8fEeKTTbcgLXf6Gw" target="_v5rOkMC1EeyjDqfhaHcnTg"/>
+        <correspondenceLinks uuid="_B63tYMIaEeyOJJ3inzipPw" source="_mGiwcT8fEeKTTbcgLXf6Gw" target="_e3-2kMISEeyOJJ3inzipPw"/>
+        <correspondenceLinks uuid="_CW3s4MIaEeyOJJ3inzipPw" source="_mGiwcT8fEeKTTbcgLXf6Gw" target="_a1VggMISEeyOJJ3inzipPw"/>
+        <correspondenceLinks uuid="_kbbFcMIcEeyaBsJX2bRgqw" modifier="CREATE" source="_zqzBsMCzEeyjDqfhaHcnTg" target="_9n1K4MIZEeyOJJ3inzipPw"/>
+        <correspondenceLinks uuid="_lnfP8MIcEeyaBsJX2bRgqw" modifier="CREATE" source="_zqzBsMCzEeyjDqfhaHcnTg" target="_0aGQAMIZEeyOJJ3inzipPw"/>
+        <correspondenceLinks uuid="_mYYhYMIcEeyaBsJX2bRgqw" modifier="CREATE" source="_zqzBsMCzEeyjDqfhaHcnTg" target="_AVrmUMIcEeyaBsJX2bRgqw"/>
+        <correspondenceLinks uuid="_nG7pcMIcEeyaBsJX2bRgqw" modifier="CREATE" source="_zqzBsMCzEeyjDqfhaHcnTg" target="_RrD9wMIcEeyaBsJX2bRgqw"/>
+        <correspondenceLinks uuid="_6Ug4oMIcEeyaBsJX2bRgqw" modifier="CREATE" source="_zqzBsMCzEeyjDqfhaHcnTg" target="_xd3BAMIcEeyaBsJX2bRgqw"/>
+        <correspondenceLinks uuid="_7MlJEMIcEeyaBsJX2bRgqw" modifier="CREATE" source="_zqzBsMCzEeyjDqfhaHcnTg" target="_sZwN8MIcEeyaBsJX2bRgqw"/>
+        <correspondenceLinks uuid="_YRuTQMIdEeyaBsJX2bRgqw" modifier="CREATE" source="_zqzBsMCzEeyjDqfhaHcnTg" target="_R7-5MMIdEeyaBsJX2bRgqw"/>
+        <correspondenceLinks uuid="_ZDUvUMIdEeyaBsJX2bRgqw" modifier="CREATE" source="_zqzBsMCzEeyjDqfhaHcnTg" target="_EKPnoMIdEeyaBsJX2bRgqw"/>
+        <correspondenceLinks uuid="_aR1J0MIdEeyaBsJX2bRgqw" modifier="CREATE" source="_zqzBsMCzEeyjDqfhaHcnTg" target="_GHwdMMIdEeyaBsJX2bRgqw"/>
+        <correspondenceLinks uuid="_bHKPUMIdEeyaBsJX2bRgqw" modifier="CREATE" source="_zqzBsMCzEeyjDqfhaHcnTg" target="_QEgaMMIdEeyaBsJX2bRgqw"/>
+        <correspondenceLinks uuid="_qc1_4MIdEeyaBsJX2bRgqw" modifier="CREATE" source="_zqzBsMCzEeyjDqfhaHcnTg" target="_neZ40MIdEeyaBsJX2bRgqw"/>
+        <correspondenceLinks uuid="_t3HuYMIdEeyaBsJX2bRgqw" modifier="CREATE" source="_zqzBsMCzEeyjDqfhaHcnTg" target="_N3JnQMIcEeyaBsJX2bRgqw"/>
+        <correspondenceLinks uuid="_uwCTYMIdEeyaBsJX2bRgqw" modifier="CREATE" source="_zqzBsMCzEeyjDqfhaHcnTg" target="_reiGYMIdEeyaBsJX2bRgqw"/>
+        <correspondenceLinks uuid="_z0EN8MIdEeyaBsJX2bRgqw" modifier="CREATE" source="_zqzBsMCzEeyjDqfhaHcnTg" target="_wqfN4MIdEeyaBsJX2bRgqw"/>
+        <correspondenceLinks uuid="__i4lgMIdEeyaBsJX2bRgqw" modifier="CREATE" source="_zqzBsMCzEeyjDqfhaHcnTg" target="_70Y6gMIdEeyaBsJX2bRgqw"/>
+      </correspondenceDomain>
+      <attributeFormulas xsi:type="mlexpressions:MLStringExpression" uuid="_GyI0EMC2EeyjDqfhaHcnTg" expressionString="factoryInterface.name = pkg.name.substring(1, 1).toUpperCase()&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;.concat(pkg.name.substring(2, pkg.name.size()))&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;.concat('Factory')" expressionLanguageID="OCL"/>
+      <attributeFormulas xsi:type="mlexpressions:MLStringExpression" uuid="_t9eLIMC2EeyjDqfhaHcnTg" expressionString="factoryImpl.name = pkg.name.substring(1, 1).toUpperCase()&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;.concat(pkg.name.substring(2, pkg.name.size()))&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;.concat('FactoryImpl')" expressionLanguageID="OCL"/>
+      <ruleParameters uuid="_NIrKQMC0EeyjDqfhaHcnTg" name="name">
+        <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        <forwardCalculationExpression xsi:type="mlexpressions:MLStringExpression" uuid="_QQf20MC0EeyjDqfhaHcnTg" expressionString="eClass.name" expressionLanguageID="OCL"/>
+        <backwardCalculationExpression xsi:type="mlexpressions:MLStringExpression" uuid="_P-8MwMC0EeyjDqfhaHcnTg" expressionString="interface.name" expressionLanguageID="OCL"/>
+      </ruleParameters>
+    </rules>
+  </ruleGroups>
+  <ruleGroups uuid="_5w2Q0SkoEe2YCYCZYoNLqQ" name="ecore2javaAttributeRule" ruleGroupID="ecore2javaAttributeRule">
+    <rules uuid="_8qYpwSkoEe2YCYCZYoNLqQ" name="r1" ruleID="r1">
+      <leftModelDomain uuid="__eHVoSkoEe2YCYCZYoNLqQ">
+        <modelObjects uuid="_MqDygCkpEe2YCYCZYoNLqQ" incomingCorrespondenceLink="_tJeEICkpEe2YCYCZYoNLqQ" name="eClass" outgoingLinks="_XGtXkCkpEe2YCYCZYoNLqQ">
+          <type xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+        </modelObjects>
+        <modelObjects uuid="_UIbokCkpEe2YCYCZYoNLqQ" modifier="CREATE" incomingCorrespondenceLink="_OuiWQCkqEe2YCYCZYoNLqQ" name="eAttribute" incomingLinks="_XGtXkCkpEe2YCYCZYoNLqQ">
+          <type xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+          <attributeAssignments uuid="_VqSVgCksEe2YCYCZYoNLqQ">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_Xp-8YCksEe2YCYCZYoNLqQ" expressionString="name" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http://www.eclipse.org/emf/2002/Ecore#//ENamedElement/name"/>
+          </attributeAssignments>
+        </modelObjects>
+        <modelLinks uuid="_XGtXkCkpEe2YCYCZYoNLqQ" modifier="CREATE" incomingCorrespondenceLink="_N4_OUCkqEe2YCYCZYoNLqQ" source="_MqDygCkpEe2YCYCZYoNLqQ" target="_UIbokCkpEe2YCYCZYoNLqQ">
+          <feature xsi:type="ecore:EReference" href="http://www.eclipse.org/emf/2002/Ecore#//EClass/eStructuralFeatures"/>
+        </modelLinks>
+      </leftModelDomain>
+      <rightModelDomain uuid="__1wZkikoEe2YCYCZYoNLqQ">
+        <modelObjects uuid="_Z9pvgCkpEe2YCYCZYoNLqQ" incomingCorrespondenceLink="_uGqFICkpEe2YCYCZYoNLqQ" name="impl" outgoingLinks="_GMHCMCkqEe2YCYCZYoNLqQ _HXLuMCkqEe2YCYCZYoNLqQ _srgq4CkrEe2YCYCZYoNLqQ">
+          <type xsi:type="ecore:EClass" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//ClassDeclaration"/>
+        </modelObjects>
+        <modelObjects uuid="_iM2lkCkpEe2YCYCZYoNLqQ" incomingCorrespondenceLink="_tkFjkCkpEe2YCYCZYoNLqQ" name="interface" outgoingLinks="_6koBsCkpEe2YCYCZYoNLqQ _8orkICkpEe2YCYCZYoNLqQ">
+          <type xsi:type="ecore:EClass" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//InterfaceDeclaration"/>
+        </modelObjects>
+        <modelObjects uuid="_ygH_wCkpEe2YCYCZYoNLqQ" modifier="CREATE" incomingCorrespondenceLink="_V2ZJwCkqEe2YCYCZYoNLqQ" name="getter" outgoingLinks="_hG1jQCkqEe2YCYCZYoNLqQ" incomingLinks="_6koBsCkpEe2YCYCZYoNLqQ _QFN_4CkrEe2YCYCZYoNLqQ">
+          <type xsi:type="ecore:EClass" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//MethodDeclaration"/>
+          <attributeAssignments uuid="_AGHCYCksEe2YCYCZYoNLqQ">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_CRfU0CksEe2YCYCZYoNLqQ" expressionString="'get'.concat(name.at(1).toUpper()).concat(name.substring(2, name.size()))" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//NamedElement/name"/>
+          </attributeAssignments>
+        </modelObjects>
+        <modelObjects uuid="_2wtEICkpEe2YCYCZYoNLqQ" modifier="CREATE" incomingCorrespondenceLink="_VLbhMCkqEe2YCYCZYoNLqQ" name="setter" outgoingLinks="_Kynd0CkrEe2YCYCZYoNLqQ" incomingLinks="_8orkICkpEe2YCYCZYoNLqQ _YHHZwCkrEe2YCYCZYoNLqQ">
+          <type xsi:type="ecore:EClass" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//MethodDeclaration"/>
+          <attributeAssignments uuid="_LFZacCksEe2YCYCZYoNLqQ">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_MgKvUCksEe2YCYCZYoNLqQ" expressionString="'set'.concat(name.at(1).toUpper()).concat(name.substring(2, name.size()))" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//NamedElement/name"/>
+          </attributeAssignments>
+        </modelObjects>
+        <modelObjects uuid="__5WqsCkpEe2YCYCZYoNLqQ" modifier="CREATE" incomingCorrespondenceLink="_Urom0CkqEe2YCYCZYoNLqQ" name="getterImpl" outgoingLinks="_QFN_4CkrEe2YCYCZYoNLqQ" incomingLinks="_GMHCMCkqEe2YCYCZYoNLqQ">
+          <type xsi:type="ecore:EClass" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//MethodDeclaration"/>
+          <attributeAssignments uuid="_N4iQcCksEe2YCYCZYoNLqQ">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_PZQcUCksEe2YCYCZYoNLqQ" expressionString="'get'.concat(name.at(1).toUpper()).concat(name.substring(2, name.size()))" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//NamedElement/name"/>
+          </attributeAssignments>
+        </modelObjects>
+        <modelObjects uuid="_C5KDsCkqEe2YCYCZYoNLqQ" modifier="CREATE" incomingCorrespondenceLink="_T8sdMCkqEe2YCYCZYoNLqQ" name="setterImpl" outgoingLinks="_YHHZwCkrEe2YCYCZYoNLqQ" incomingLinks="_HXLuMCkqEe2YCYCZYoNLqQ">
+          <type xsi:type="ecore:EClass" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//MethodDeclaration"/>
+          <attributeAssignments uuid="_QsvdcCksEe2YCYCZYoNLqQ">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_RxA94CksEe2YCYCZYoNLqQ" expressionString="'set'.concat(name.at(1).toUpper()).concat(name.substring(2, name.size()))" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//NamedElement/name"/>
+          </attributeAssignments>
+        </modelObjects>
+        <modelObjects uuid="_d-aZwCkqEe2YCYCZYoNLqQ" modifier="CREATE" incomingCorrespondenceLink="_jJ6OQCkqEe2YCYCZYoNLqQ" name="getterModifier" incomingLinks="_hG1jQCkqEe2YCYCZYoNLqQ">
+          <type xsi:type="ecore:EClass" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//Modifier"/>
+          <attributeAssignments uuid="_j-oPwCkqEe2YCYCZYoNLqQ">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_AREKoCkrEe2YCYCZYoNLqQ" expressionString="java::InheritanceKind::abstract" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//Modifier/inheritance"/>
+          </attributeAssignments>
+        </modelObjects>
+        <modelObjects uuid="_Fx4H0CkrEe2YCYCZYoNLqQ" modifier="CREATE" incomingCorrespondenceLink="_NnHlwCkrEe2YCYCZYoNLqQ" name="setterModifier" incomingLinks="_Kynd0CkrEe2YCYCZYoNLqQ">
+          <type xsi:type="ecore:EClass" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//Modifier"/>
+          <attributeAssignments uuid="_H3AoUCkrEe2YCYCZYoNLqQ">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_JNghMCkrEe2YCYCZYoNLqQ" expressionString="java::InheritanceKind::abstract" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//Modifier/inheritance"/>
+          </attributeAssignments>
+        </modelObjects>
+        <modelObjects uuid="_n2SBUCkrEe2YCYCZYoNLqQ" modifier="CREATE" incomingCorrespondenceLink="_xfMcUCkrEe2YCYCZYoNLqQ" name="attribute" outgoingLinks="_2CzKYCkrEe2YCYCZYoNLqQ" incomingLinks="_srgq4CkrEe2YCYCZYoNLqQ">
+          <type xsi:type="ecore:EClass" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//FieldDeclaration"/>
+          <attributeAssignments uuid="_TXo9cCksEe2YCYCZYoNLqQ">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_UkiOYCksEe2YCYCZYoNLqQ" expressionString="name" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//NamedElement/name"/>
+          </attributeAssignments>
+        </modelObjects>
+        <modelObjects uuid="_yyvu4CkrEe2YCYCZYoNLqQ" modifier="CREATE" incomingCorrespondenceLink="_4sBPYCkrEe2YCYCZYoNLqQ" name="attributeModifier" incomingLinks="_2CzKYCkrEe2YCYCZYoNLqQ">
+          <type xsi:type="ecore:EClass" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//Modifier"/>
+          <attributeAssignments uuid="_5-3-YCkrEe2YCYCZYoNLqQ">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_7YWSwCkrEe2YCYCZYoNLqQ" expressionString="java::VisibilityKind::private" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//Modifier/visibility"/>
+          </attributeAssignments>
+        </modelObjects>
+        <modelLinks uuid="_6koBsCkpEe2YCYCZYoNLqQ" modifier="CREATE" incomingCorrespondenceLink="_PU1hQCkqEe2YCYCZYoNLqQ" source="_iM2lkCkpEe2YCYCZYoNLqQ" target="_ygH_wCkpEe2YCYCZYoNLqQ">
+          <feature xsi:type="ecore:EReference" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//AbstractTypeDeclaration/bodyDeclarations"/>
+        </modelLinks>
+        <modelLinks uuid="_8orkICkpEe2YCYCZYoNLqQ" modifier="CREATE" incomingCorrespondenceLink="_P8bswCkqEe2YCYCZYoNLqQ" source="_iM2lkCkpEe2YCYCZYoNLqQ" target="_2wtEICkpEe2YCYCZYoNLqQ">
+          <feature xsi:type="ecore:EReference" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//AbstractTypeDeclaration/bodyDeclarations"/>
+        </modelLinks>
+        <modelLinks uuid="_GMHCMCkqEe2YCYCZYoNLqQ" modifier="CREATE" incomingCorrespondenceLink="_R2V0sCkqEe2YCYCZYoNLqQ" source="_Z9pvgCkpEe2YCYCZYoNLqQ" target="__5WqsCkpEe2YCYCZYoNLqQ">
+          <feature xsi:type="ecore:EReference" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//AbstractTypeDeclaration/bodyDeclarations"/>
+        </modelLinks>
+        <modelLinks uuid="_HXLuMCkqEe2YCYCZYoNLqQ" modifier="CREATE" incomingCorrespondenceLink="_THJ8UCkqEe2YCYCZYoNLqQ" source="_Z9pvgCkpEe2YCYCZYoNLqQ" target="_C5KDsCkqEe2YCYCZYoNLqQ">
+          <feature xsi:type="ecore:EReference" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//AbstractTypeDeclaration/bodyDeclarations"/>
+        </modelLinks>
+        <modelLinks uuid="_hG1jQCkqEe2YCYCZYoNLqQ" modifier="CREATE" incomingCorrespondenceLink="_in4fQCkqEe2YCYCZYoNLqQ" source="_ygH_wCkpEe2YCYCZYoNLqQ" target="_d-aZwCkqEe2YCYCZYoNLqQ">
+          <feature xsi:type="ecore:EReference" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//BodyDeclaration/modifier"/>
+        </modelLinks>
+        <modelLinks uuid="_Kynd0CkrEe2YCYCZYoNLqQ" modifier="CREATE" incomingCorrespondenceLink="_NCufQCkrEe2YCYCZYoNLqQ" source="_2wtEICkpEe2YCYCZYoNLqQ" target="_Fx4H0CkrEe2YCYCZYoNLqQ">
+          <feature xsi:type="ecore:EReference" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//BodyDeclaration/modifier"/>
+        </modelLinks>
+        <modelLinks uuid="_QFN_4CkrEe2YCYCZYoNLqQ" modifier="CREATE" incomingCorrespondenceLink="_WObZ0CkrEe2YCYCZYoNLqQ" source="__5WqsCkpEe2YCYCZYoNLqQ" target="_ygH_wCkpEe2YCYCZYoNLqQ">
+          <feature xsi:type="ecore:EReference" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//MethodDeclaration/redefinedMethodDeclaration"/>
+        </modelLinks>
+        <modelLinks uuid="_YHHZwCkrEe2YCYCZYoNLqQ" modifier="CREATE" incomingCorrespondenceLink="_bmu7QCkrEe2YCYCZYoNLqQ" source="_C5KDsCkqEe2YCYCZYoNLqQ" target="_2wtEICkpEe2YCYCZYoNLqQ">
+          <feature xsi:type="ecore:EReference" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//MethodDeclaration/redefinedMethodDeclaration"/>
+        </modelLinks>
+        <modelLinks uuid="_srgq4CkrEe2YCYCZYoNLqQ" modifier="CREATE" incomingCorrespondenceLink="_w6DH4CkrEe2YCYCZYoNLqQ" source="_Z9pvgCkpEe2YCYCZYoNLqQ" target="_n2SBUCkrEe2YCYCZYoNLqQ">
+          <feature xsi:type="ecore:EReference" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//AbstractTypeDeclaration/bodyDeclarations"/>
+        </modelLinks>
+        <modelLinks uuid="_2CzKYCkrEe2YCYCZYoNLqQ" modifier="CREATE" incomingCorrespondenceLink="_4KJRYCkrEe2YCYCZYoNLqQ" source="_n2SBUCkrEe2YCYCZYoNLqQ" target="_yyvu4CkrEe2YCYCZYoNLqQ">
+          <feature xsi:type="ecore:EReference" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//BodyDeclaration/modifier"/>
+        </modelLinks>
+      </rightModelDomain>
+      <correspondenceDomain uuid="_AE0JQykpEe2YCYCZYoNLqQ">
+        <correspondenceNodes uuid="_rfkHECkpEe2YCYCZYoNLqQ" name="corrClass" outgoingLinks="_tJeEICkpEe2YCYCZYoNLqQ _tkFjkCkpEe2YCYCZYoNLqQ _uGqFICkpEe2YCYCZYoNLqQ">
+          <type xsi:type="ecore:EClass" href="ecore2java.ecore#//CorrClass"/>
+        </correspondenceNodes>
+        <correspondenceNodes uuid="_JyD1MCkqEe2YCYCZYoNLqQ" modifier="CREATE" name="corrAttribute" outgoingLinks="_N4_OUCkqEe2YCYCZYoNLqQ _OuiWQCkqEe2YCYCZYoNLqQ _PU1hQCkqEe2YCYCZYoNLqQ _P8bswCkqEe2YCYCZYoNLqQ _R2V0sCkqEe2YCYCZYoNLqQ _THJ8UCkqEe2YCYCZYoNLqQ _T8sdMCkqEe2YCYCZYoNLqQ _Urom0CkqEe2YCYCZYoNLqQ _VLbhMCkqEe2YCYCZYoNLqQ _V2ZJwCkqEe2YCYCZYoNLqQ _in4fQCkqEe2YCYCZYoNLqQ _jJ6OQCkqEe2YCYCZYoNLqQ _NCufQCkrEe2YCYCZYoNLqQ _NnHlwCkrEe2YCYCZYoNLqQ _WObZ0CkrEe2YCYCZYoNLqQ _bmu7QCkrEe2YCYCZYoNLqQ _w6DH4CkrEe2YCYCZYoNLqQ _xfMcUCkrEe2YCYCZYoNLqQ _4KJRYCkrEe2YCYCZYoNLqQ _4sBPYCkrEe2YCYCZYoNLqQ">
+          <type xsi:type="ecore:EClass" href="ecore2java.ecore#//CorrAttribute"/>
+        </correspondenceNodes>
+        <correspondenceLinks uuid="_tJeEICkpEe2YCYCZYoNLqQ" source="_rfkHECkpEe2YCYCZYoNLqQ" target="_MqDygCkpEe2YCYCZYoNLqQ"/>
+        <correspondenceLinks uuid="_tkFjkCkpEe2YCYCZYoNLqQ" source="_rfkHECkpEe2YCYCZYoNLqQ" target="_iM2lkCkpEe2YCYCZYoNLqQ"/>
+        <correspondenceLinks uuid="_uGqFICkpEe2YCYCZYoNLqQ" source="_rfkHECkpEe2YCYCZYoNLqQ" target="_Z9pvgCkpEe2YCYCZYoNLqQ"/>
+        <correspondenceLinks uuid="_N4_OUCkqEe2YCYCZYoNLqQ" modifier="CREATE" source="_JyD1MCkqEe2YCYCZYoNLqQ" target="_XGtXkCkpEe2YCYCZYoNLqQ"/>
+        <correspondenceLinks uuid="_OuiWQCkqEe2YCYCZYoNLqQ" modifier="CREATE" source="_JyD1MCkqEe2YCYCZYoNLqQ" target="_UIbokCkpEe2YCYCZYoNLqQ"/>
+        <correspondenceLinks uuid="_PU1hQCkqEe2YCYCZYoNLqQ" modifier="CREATE" source="_JyD1MCkqEe2YCYCZYoNLqQ" target="_6koBsCkpEe2YCYCZYoNLqQ"/>
+        <correspondenceLinks uuid="_P8bswCkqEe2YCYCZYoNLqQ" modifier="CREATE" source="_JyD1MCkqEe2YCYCZYoNLqQ" target="_8orkICkpEe2YCYCZYoNLqQ"/>
+        <correspondenceLinks uuid="_R2V0sCkqEe2YCYCZYoNLqQ" modifier="CREATE" source="_JyD1MCkqEe2YCYCZYoNLqQ" target="_GMHCMCkqEe2YCYCZYoNLqQ"/>
+        <correspondenceLinks uuid="_THJ8UCkqEe2YCYCZYoNLqQ" modifier="CREATE" source="_JyD1MCkqEe2YCYCZYoNLqQ" target="_HXLuMCkqEe2YCYCZYoNLqQ"/>
+        <correspondenceLinks uuid="_T8sdMCkqEe2YCYCZYoNLqQ" modifier="CREATE" source="_JyD1MCkqEe2YCYCZYoNLqQ" target="_C5KDsCkqEe2YCYCZYoNLqQ"/>
+        <correspondenceLinks uuid="_Urom0CkqEe2YCYCZYoNLqQ" modifier="CREATE" source="_JyD1MCkqEe2YCYCZYoNLqQ" target="__5WqsCkpEe2YCYCZYoNLqQ"/>
+        <correspondenceLinks uuid="_VLbhMCkqEe2YCYCZYoNLqQ" modifier="CREATE" source="_JyD1MCkqEe2YCYCZYoNLqQ" target="_2wtEICkpEe2YCYCZYoNLqQ"/>
+        <correspondenceLinks uuid="_V2ZJwCkqEe2YCYCZYoNLqQ" modifier="CREATE" source="_JyD1MCkqEe2YCYCZYoNLqQ" target="_ygH_wCkpEe2YCYCZYoNLqQ"/>
+        <correspondenceLinks uuid="_in4fQCkqEe2YCYCZYoNLqQ" modifier="CREATE" source="_JyD1MCkqEe2YCYCZYoNLqQ" target="_hG1jQCkqEe2YCYCZYoNLqQ"/>
+        <correspondenceLinks uuid="_jJ6OQCkqEe2YCYCZYoNLqQ" modifier="CREATE" source="_JyD1MCkqEe2YCYCZYoNLqQ" target="_d-aZwCkqEe2YCYCZYoNLqQ"/>
+        <correspondenceLinks uuid="_NCufQCkrEe2YCYCZYoNLqQ" modifier="CREATE" source="_JyD1MCkqEe2YCYCZYoNLqQ" target="_Kynd0CkrEe2YCYCZYoNLqQ"/>
+        <correspondenceLinks uuid="_NnHlwCkrEe2YCYCZYoNLqQ" modifier="CREATE" source="_JyD1MCkqEe2YCYCZYoNLqQ" target="_Fx4H0CkrEe2YCYCZYoNLqQ"/>
+        <correspondenceLinks uuid="_WObZ0CkrEe2YCYCZYoNLqQ" modifier="CREATE" source="_JyD1MCkqEe2YCYCZYoNLqQ" target="_QFN_4CkrEe2YCYCZYoNLqQ"/>
+        <correspondenceLinks uuid="_bmu7QCkrEe2YCYCZYoNLqQ" modifier="CREATE" source="_JyD1MCkqEe2YCYCZYoNLqQ" target="_YHHZwCkrEe2YCYCZYoNLqQ"/>
+        <correspondenceLinks uuid="_w6DH4CkrEe2YCYCZYoNLqQ" modifier="CREATE" source="_JyD1MCkqEe2YCYCZYoNLqQ" target="_srgq4CkrEe2YCYCZYoNLqQ"/>
+        <correspondenceLinks uuid="_xfMcUCkrEe2YCYCZYoNLqQ" modifier="CREATE" source="_JyD1MCkqEe2YCYCZYoNLqQ" target="_n2SBUCkrEe2YCYCZYoNLqQ"/>
+        <correspondenceLinks uuid="_4KJRYCkrEe2YCYCZYoNLqQ" modifier="CREATE" source="_JyD1MCkqEe2YCYCZYoNLqQ" target="_2CzKYCkrEe2YCYCZYoNLqQ"/>
+        <correspondenceLinks uuid="_4sBPYCkrEe2YCYCZYoNLqQ" modifier="CREATE" source="_JyD1MCkqEe2YCYCZYoNLqQ" target="_yyvu4CkrEe2YCYCZYoNLqQ"/>
+      </correspondenceDomain>
+      <ruleParameters uuid="_iB0IUCkrEe2YCYCZYoNLqQ" name="name">
+        <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        <forwardCalculationExpression xsi:type="mlexpressions:MLStringExpression" uuid="_jXfh0CkrEe2YCYCZYoNLqQ" expressionString="eAttribute.name" expressionLanguageID="OCL"/>
+        <backwardCalculationExpression xsi:type="mlexpressions:MLStringExpression" uuid="_jn-N0CkrEe2YCYCZYoNLqQ" expressionString="attribute.name" expressionLanguageID="OCL"/>
+      </ruleParameters>
+    </rules>
+  </ruleGroups>
+</mltgg:TGG>

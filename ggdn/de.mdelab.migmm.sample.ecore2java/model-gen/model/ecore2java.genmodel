@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/de.mdelab.migmm.sample.ecore2java/src-gen" editDirectory="/de.mdelab.migmm.sample.ecore2java.edit/src-gen"
+    editorDirectory="/de.mdelab.migmm.sample.ecore2java.editor/src-gen" modelPluginID="de.mdelab.migmm.sample.ecore2java"
+    forceOverwrite="true" modelName="Ecore2java" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    codeFormatting="true" importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0"
+    copyrightFields="false" usedGenPackages="../../../de.mdelab.mltgg.mote2/model/mote2.genmodel#//mote2 ../../../de.mdelab.mlcore/model/mlcore.genmodel#//mlcore ../../../de.mdelab.mltgg.mote2.sdm/model/sdm.genmodel#//sdm ../../../de.mdelab.mlsdm/model/mlsdm.genmodel#//mlsdm ../../../de.mdelab.mlexpressions/model/mlexpressions.genmodel#//mlexpressions ../../../de.mdelab.mlstorypatterns/model/mlstorypatterns.genmodel#//mlstorypatterns ../../../de.mdelab.mlexpressions.mlcallactions/model/mlcallactions.genmodel#//mlcallactions"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>ecore2java.ecore</foreignModel>
+  <genPackages prefix="Ecore2java" basePackage="de.mdelab.migmm.sample" disposableProviderFactory="true"
+      ecorePackage="ecore2java.ecore#/">
+    <genClasses ecoreClass="ecore2java.ecore#//CorrAxiom"/>
+    <genClasses ecoreClass="ecore2java.ecore#//CorrClass"/>
+    <genClasses ecoreClass="ecore2java.ecore#//CorrAttribute"/>
+    <nestedGenPackages prefix="Generated" disposableProviderFactory="true" ecorePackage="ecore2java.ecore#//generated">
+      <genClasses ecoreClass="ecore2java.ecore#//generated/ecore2javaOperationalTGG"/>
+      <genClasses ecoreClass="ecore2java.ecore#//generated/ecore2javaAxiom"/>
+      <genClasses ecoreClass="ecore2java.ecore#//generated/ecore2javaClassRule"/>
+      <genClasses ecoreClass="ecore2java.ecore#//generated/ecore2javaAttributeRule"/>
+      <genClasses ecoreClass="ecore2java.ecore#//generated/ecore2javaAxiom_r1">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference ecore2java.ecore#//generated/ecore2javaAxiom_r1/addElementActivity"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference ecore2java.ecore#//generated/ecore2javaAxiom_r1/moveElementActivity"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference ecore2java.ecore#//generated/ecore2javaAxiom_r1/changeAttributeActivity"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference ecore2java.ecore#//generated/ecore2javaAxiom_r1/transformForwardActivity"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference ecore2java.ecore#//generated/ecore2javaAxiom_r1/transformMappingActivity"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference ecore2java.ecore#//generated/ecore2javaAxiom_r1/transformBackwardActivity"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference ecore2java.ecore#//generated/ecore2javaAxiom_r1/synchronizeForwardActivity"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference ecore2java.ecore#//generated/ecore2javaAxiom_r1/synchronizeBackwardActivity"/>
+        <genOperations ecoreOperation="ecore2java.ecore#//generated/ecore2javaAxiom_r1/addElement"
+            body="final EMap&lt;String, Object> parametersCopy = new org.eclipse.emf.common.util.BasicEMap&lt;String, Object>(parameters.map());&#xD;&#xA;&#xD;&#xA;((de.mdelab.migmm.sample.ecore2java.generated.ecore2javaOperationalTGG) this.getOperationalAxiomGroup().getOperationalTGG()).executeActivity(this.getAddElementActivity(), parametersCopy);&#xD;&#xA;&#xD;&#xA;de.mdelab.mltgg.mote2.TGGNode tggNode = (de.mdelab.mltgg.mote2.TGGNode) parametersCopy.get(&quot;corrAxiom&quot;);&#xD;&#xA;&#xD;&#xA;if (tggNode != null)&#xD;&#xA;{&#xD;&#xA;leftInputElements.add((org.eclipse.emf.ecore.EObject) parametersCopy.get(&quot;ePackage&quot;));&#xD;&#xA;rightInputElements.add((org.eclipse.emf.ecore.EObject) parametersCopy.get(&quot;pkg&quot;));&#x9;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;return tggNode;">
+          <genParameters ecoreParameter="ecore2java.ecore#//generated/ecore2javaAxiom_r1/addElement/parameters"/>
+          <genParameters ecoreParameter="ecore2java.ecore#//generated/ecore2javaAxiom_r1/addElement/leftInputElements"/>
+          <genParameters ecoreParameter="ecore2java.ecore#//generated/ecore2javaAxiom_r1/addElement/rightInputElements"/>
+        </genOperations>
+        <genOperations ecoreOperation="ecore2java.ecore#//generated/ecore2javaAxiom_r1/changeAttributeValues"
+            body="org.eclipse.emf.common.util.EMap&lt;String, Object> params = new org.eclipse.emf.common.util.BasicEMap&lt;String, Object>(ruleParameters.map());&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;params.put(&quot;corrAxiom&quot;, correspondenceNode);&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;((de.mdelab.migmm.sample.ecore2java.generated.ecore2javaOperationalTGG) this&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;.getOperationalAxiomGroup().getOperationalTGG())&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;.executeActivity(this.getChangeAttributeActivity(), params);&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;return (Boolean) params.get(&quot;__returnValue&quot;);">
+          <genParameters ecoreParameter="ecore2java.ecore#//generated/ecore2javaAxiom_r1/changeAttributeValues/correspondenceNode"/>
+          <genParameters ecoreParameter="ecore2java.ecore#//generated/ecore2javaAxiom_r1/changeAttributeValues/ruleParameters"/>
+        </genOperations>
+        <genOperations ecoreOperation="ecore2java.ecore#//generated/ecore2javaAxiom_r1/transformForward"
+            body="&#xD;&#xA;final org.eclipse.emf.common.util.EMap&lt;String, Object> parameters = new org.eclipse.emf.common.util.BasicEMap&lt;String, Object>();&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;parameters.put(&quot;__thisRule&quot;, this);&#xD;&#xA;&#x9;&#x9;parameters.put(&quot;__checkAttributeFormulae&quot;, checkAttributeFormulae);&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;parameters.put(&quot;ePackage&quot;, leftInputElements.get(0));&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;((de.mdelab.migmm.sample.ecore2java.generated.ecore2javaOperationalTGG) this.getOperationalAxiomGroup().getOperationalTGG()).executeActivity(this.getTransformForwardActivity(), parameters);&#x9;&#x9;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;final ErrorCodeEnum errorCode = (ErrorCodeEnum) parameters.get(&quot;__errorCode&quot;);&#xD;&#xA;&#x9;&#x9;if (errorCode == ErrorCodeEnum.OK)&#xD;&#xA;&#x9;&#x9;{&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;rightInputElements.add((org.eclipse.emf.ecore.EObject) parameters.get(&quot;pkg&quot;));&#xD;&#xA;&#x9;&#x9;}&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;return errorCode;">
+          <genParameters ecoreParameter="ecore2java.ecore#//generated/ecore2javaAxiom_r1/transformForward/leftInputElements"/>
+          <genParameters ecoreParameter="ecore2java.ecore#//generated/ecore2javaAxiom_r1/transformForward/rightInputElements"/>
+          <genParameters ecoreParameter="ecore2java.ecore#//generated/ecore2javaAxiom_r1/transformForward/checkAttributeFormulae"/>
+        </genOperations>
+        <genOperations ecoreOperation="ecore2java.ecore#//generated/ecore2javaAxiom_r1/transformMapping"
+            body="&#xD;&#xA;final org.eclipse.emf.common.util.EMap&lt;String, Object> parameters = new org.eclipse.emf.common.util.BasicEMap&lt;String, Object>();&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;parameters.put(&quot;__thisRule&quot;, this);&#xD;&#xA;&#x9;&#x9;parameters.put(&quot;__checkAttributeFormulae&quot;, checkAttributeFormulae);&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;parameters.put(&quot;ePackage&quot;, leftInputElements.get(0));&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;parameters.put(&quot;pkg&quot;, rightInputElements.get(0));&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;((de.mdelab.migmm.sample.ecore2java.generated.ecore2javaOperationalTGG) this.getOperationalAxiomGroup().getOperationalTGG()).executeActivity(this.getTransformMappingActivity(), parameters);&#x9;&#x9;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;final ErrorCodeEnum errorCode = (ErrorCodeEnum) parameters.get(&quot;__errorCode&quot;);&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;return errorCode;">
+          <genParameters ecoreParameter="ecore2java.ecore#//generated/ecore2javaAxiom_r1/transformMapping/leftInputElements"/>
+          <genParameters ecoreParameter="ecore2java.ecore#//generated/ecore2javaAxiom_r1/transformMapping/rightInputElements"/>
+          <genParameters ecoreParameter="ecore2java.ecore#//generated/ecore2javaAxiom_r1/transformMapping/checkAttributeFormulae"/>
+        </genOperations>
+        <genOperations ecoreOperation="ecore2java.ecore#//generated/ecore2javaAxiom_r1/transformBackward"
+            body="&#xD;&#xA;final org.eclipse.emf.common.util.EMap&lt;String, Object> parameters = new org.eclipse.emf.common.util.BasicEMap&lt;String, Object>();&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;parameters.put(&quot;__thisRule&quot;, this);&#xD;&#xA;&#x9;&#x9;parameters.put(&quot;__checkAttributeFormulae&quot;, checkAttributeFormulae);&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;parameters.put(&quot;pkg&quot;, rightInputElements.get(0));&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;((de.mdelab.migmm.sample.ecore2java.generated.ecore2javaOperationalTGG) this.getOperationalAxiomGroup().getOperationalTGG()).executeActivity(this.getTransformBackwardActivity(), parameters);&#x9;&#x9;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;final ErrorCodeEnum errorCode = (ErrorCodeEnum) parameters.get(&quot;__errorCode&quot;);&#xD;&#xA;&#x9;&#x9;if (errorCode == ErrorCodeEnum.OK)&#xD;&#xA;&#x9;&#x9;{&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;leftInputElements.add((org.eclipse.emf.ecore.EObject) parameters.get(&quot;ePackage&quot;));&#xD;&#xA;&#x9;&#x9;}&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;return errorCode;">
+          <genParameters ecoreParameter="ecore2java.ecore#//generated/ecore2javaAxiom_r1/transformBackward/leftInputElements"/>
+          <genParameters ecoreParameter="ecore2java.ecore#//generated/ecore2javaAxiom_r1/transformBackward/rightInputElements"/>
+          <genParameters ecoreParameter="ecore2java.ecore#//generated/ecore2javaAxiom_r1/transformBackward/checkAttributeFormulae"/>
+        </genOperations>
+        <genOperations ecoreOperation="ecore2java.ecore#//generated/ecore2javaAxiom_r1/synchronizeForward"
+            body="&#xD;&#xA;final org.eclipse.emf.common.util.EMap&lt;String, Object> parameters = new org.eclipse.emf.common.util.BasicEMap&lt;String, Object>();&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;parameters.put(&quot;__thisRule&quot;, this);&#xD;&#xA;&#x9;&#x9;parameters.put(&quot;__checkAttributeFormulae&quot;, checkAttributeFormulae);&#xD;&#xA;&#x9;&#x9;parameters.put(&quot;__inputTggNode&quot;, inputTggNode);&#xD;&#xA;&#x9;&#x9;&#x9;parameters.put(&quot;ePackage&quot;, leftInputElements.get(0));&#xD;&#xA;&#x9;&#x9;&#x9;parameters.put(&quot;pkg&quot;, rightInputElements.get(0));&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;((de.mdelab.migmm.sample.ecore2java.generated.ecore2javaOperationalTGG) this.getOperationalAxiomGroup().getOperationalTGG()).executeActivity(this.getSynchronizeForwardActivity(), parameters);&#x9;&#x9;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;final ErrorCodeEnum errorCode = (ErrorCodeEnum) parameters.get(&quot;__errorCode&quot;);&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;if (errorCode == ErrorCodeEnum.OK)&#xD;&#xA;&#x9;&#x9;{&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;rightInputElements.add((org.eclipse.emf.ecore.EObject) parameters.get(&quot;pkg&quot;));&#xD;&#xA;&#x9;&#x9;}&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;return errorCode;">
+          <genParameters ecoreParameter="ecore2java.ecore#//generated/ecore2javaAxiom_r1/synchronizeForward/leftInputElements"/>
+          <genParameters ecoreParameter="ecore2java.ecore#//generated/ecore2javaAxiom_r1/synchronizeForward/rightInputElements"/>
+          <genParameters ecoreParameter="ecore2java.ecore#//generated/ecore2javaAxiom_r1/synchronizeForward/inputTggNode"/>
+          <genParameters ecoreParameter="ecore2java.ecore#//generated/ecore2javaAxiom_r1/synchronizeForward/checkAttributeFormulae"/>
+        </genOperations>
+        <genOperations ecoreOperation="ecore2java.ecore#//generated/ecore2javaAxiom_r1/synchronizeBackward"
+            body="&#xD;&#xA;final org.eclipse.emf.common.util.EMap&lt;String, Object> parameters = new org.eclipse.emf.common.util.BasicEMap&lt;String, Object>();&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;parameters.put(&quot;__thisRule&quot;, this);&#xD;&#xA;&#x9;&#x9;parameters.put(&quot;__checkAttributeFormulae&quot;, checkAttributeFormulae);&#xD;&#xA;&#x9;&#x9;parameters.put(&quot;__inputTggNode&quot;, inputTggNode);&#xD;&#xA;&#x9;&#x9;&#x9;parameters.put(&quot;ePackage&quot;, leftInputElements.get(0));&#xD;&#xA;&#x9;&#x9;&#x9;parameters.put(&quot;pkg&quot;, rightInputElements.get(0));&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;((de.mdelab.migmm.sample.ecore2java.generated.ecore2javaOperationalTGG) this.getOperationalAxiomGroup().getOperationalTGG()).executeActivity(this.getSynchronizeBackwardActivity(), parameters);&#x9;&#x9;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;final ErrorCodeEnum errorCode = (ErrorCodeEnum) parameters.get(&quot;__errorCode&quot;);&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;if (errorCode == ErrorCodeEnum.OK)&#xD;&#xA;&#x9;&#x9;{&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;leftInputElements.add((org.eclipse.emf.ecore.EObject) parameters.get(&quot;ePackage&quot;));&#xD;&#xA;&#x9;&#x9;}&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;return errorCode;">
+          <genParameters ecoreParameter="ecore2java.ecore#//generated/ecore2javaAxiom_r1/synchronizeBackward/leftInputElements"/>
+          <genParameters ecoreParameter="ecore2java.ecore#//generated/ecore2javaAxiom_r1/synchronizeBackward/rightInputElements"/>
+          <genParameters ecoreParameter="ecore2java.ecore#//generated/ecore2javaAxiom_r1/synchronizeBackward/inputTggNode"/>
+          <genParameters ecoreParameter="ecore2java.ecore#//generated/ecore2javaAxiom_r1/synchronizeBackward/checkAttributeFormulae"/>
+        </genOperations>
+      </genClasses>
+      <genClasses ecoreClass="ecore2java.ecore#//generated/ecore2javaClassRule_r1">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference ecore2java.ecore#//generated/ecore2javaClassRule_r1/addElementActivity"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference ecore2java.ecore#//generated/ecore2javaClassRule_r1/moveElementActivity"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference ecore2java.ecore#//generated/ecore2javaClassRule_r1/changeAttributeActivity"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference ecore2java.ecore#//generated/ecore2javaClassRule_r1/transformForwardActivity"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference ecore2java.ecore#//generated/ecore2javaClassRule_r1/transformMappingActivity"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference ecore2java.ecore#//generated/ecore2javaClassRule_r1/transformBackwardActivity"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference ecore2java.ecore#//generated/ecore2javaClassRule_r1/conflictCheckForwardActivity"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference ecore2java.ecore#//generated/ecore2javaClassRule_r1/conflictCheckMappingActivity"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference ecore2java.ecore#//generated/ecore2javaClassRule_r1/conflictCheckBackwardActivity"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference ecore2java.ecore#//generated/ecore2javaClassRule_r1/synchronizeForwardActivity"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference ecore2java.ecore#//generated/ecore2javaClassRule_r1/synchronizeBackwardActivity"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference ecore2java.ecore#//generated/ecore2javaClassRule_r1/repairForwardActivity"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference ecore2java.ecore#//generated/ecore2javaClassRule_r1/repairBackwardActivity"/>
+        <genOperations ecoreOperation="ecore2java.ecore#//generated/ecore2javaClassRule_r1/addElement"
+            body="final EMap&lt;String, Object> parametersCopy = new org.eclipse.emf.common.util.BasicEMap&lt;String, Object>(parameters.map());&#xD;&#xA;&#xD;&#xA;((de.mdelab.migmm.sample.ecore2java.generated.ecore2javaOperationalTGG) this.getOperationalRuleGroup().getOperationalTGG()).executeActivity(this.getAddElementActivity(),&#x9;parametersCopy);&#xD;&#xA;&#xD;&#xA;return (TGGNode) parametersCopy.get(&quot;corrClass&quot;);">
+          <genParameters ecoreParameter="ecore2java.ecore#//generated/ecore2javaClassRule_r1/addElement/parameters"/>
+        </genOperations>
+        <genOperations ecoreOperation="ecore2java.ecore#//generated/ecore2javaClassRule_r1/changeAttributeValues"
+            body="org.eclipse.emf.common.util.EMap&lt;String, Object> params = new org.eclipse.emf.common.util.BasicEMap&lt;String, Object>(ruleParameters.map());&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;params.put(&quot;corrClass&quot;, correspondenceNode);&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;((de.mdelab.migmm.sample.ecore2java.generated.ecore2javaOperationalTGG) this&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;.getOperationalRuleGroup().getOperationalTGG())&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;.executeActivity(this.getChangeAttributeActivity(), params);&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;return (Boolean) params.get(&quot;__returnValue&quot;);">
+          <genParameters ecoreParameter="ecore2java.ecore#//generated/ecore2javaClassRule_r1/changeAttributeValues/correspondenceNode"/>
+          <genParameters ecoreParameter="ecore2java.ecore#//generated/ecore2javaClassRule_r1/changeAttributeValues/ruleParameters"/>
+        </genOperations>
+        <genOperations ecoreOperation="ecore2java.ecore#//generated/ecore2javaClassRule_r1/moveElement"
+            body="org.eclipse.emf.common.util.EMap&lt;String, Object> params = new org.eclipse.emf.common.util.BasicEMap&lt;String, Object>();&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;params.put(&quot;corrClass&quot;, correspondenceNode);&#xD;&#xA;params.put(&quot;__oldPreviousCorrespondenceNode&quot;, oldPreviousCorrespondenceNode);&#xD;&#xA;params.put(&quot;__newPreviousCorrespondenceNode&quot;, newPreviousCorrespondenceNode);&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;((de.mdelab.migmm.sample.ecore2java.generated.ecore2javaOperationalTGG) this&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;.getOperationalRuleGroup().getOperationalTGG())&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;.executeActivity(this.getMoveElementActivity(), params);&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;return (Boolean) params.get(&quot;__returnValue&quot;);">
+          <genParameters ecoreParameter="ecore2java.ecore#//generated/ecore2javaClassRule_r1/moveElement/correspondenceNode"/>
+          <genParameters ecoreParameter="ecore2java.ecore#//generated/ecore2javaClassRule_r1/moveElement/oldPreviousCorrespondenceNode"/>
+          <genParameters ecoreParameter="ecore2java.ecore#//generated/ecore2javaClassRule_r1/moveElement/newPreviousCorrespondenceNode"/>
+        </genOperations>
+        <genOperations ecoreOperation="ecore2java.ecore#//generated/ecore2javaClassRule_r1/transformForward"
+            body="&#xD;&#xA;final org.eclipse.emf.common.util.EMap&lt;String, Object> parameters = new org.eclipse.emf.common.util.BasicEMap&lt;String, Object>();&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;parameters.put(&quot;__thisRule&quot;, this);&#xD;&#xA;&#x9;&#x9;parameters.put(&quot;__checkAttributeFormulae&quot;, checkAttributeFormulae);&#xD;&#xA;&#x9;&#x9;parameters.put(&quot;__considerAllLhsCorrNodes&quot;, considerAllLhsCorrNodes); &#xD;&#xA;&#x9;&#x9;parameters.put(&quot;__inputTggNode&quot;, inputTggNode);&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;((de.mdelab.migmm.sample.ecore2java.generated.ecore2javaOperationalTGG) this.getOperationalRuleGroup().getOperationalTGG()).executeActivity(this.getTransformForwardActivity(), parameters);&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;final ErrorCodeEnum errorCode = (ErrorCodeEnum) parameters.get(&quot;__errorCode&quot;);&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;return errorCode;">
+          <genParameters ecoreParameter="ecore2java.ecore#//generated/ecore2javaClassRule_r1/transformForward/inputTggNode"/>
+          <genParameters ecoreParameter="ecore2java.ecore#//generated/ecore2javaClassRule_r1/transformForward/checkAttributeFormulae"/>
+          <genParameters ecoreParameter="ecore2java.ecore#//generated/ecore2javaClassRule_r1/transformForward/considerAllLhsCorrNodes"/>
+        </genOperations>
+        <genOperations ecoreOperation="ecore2java.ecore#//generated/ecore2javaClassRule_r1/transformMapping"
+            body="&#xD;&#xA;final org.eclipse.emf.common.util.EMap&lt;String, Object> parameters = new org.eclipse.emf.common.util.BasicEMap&lt;String, Object>();&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;parameters.put(&quot;__thisRule&quot;, this);&#xD;&#xA;&#x9;&#x9;parameters.put(&quot;__checkAttributeFormulae&quot;, checkAttributeFormulae);&#xD;&#xA;&#x9;&#x9;parameters.put(&quot;__considerAllLhsCorrNodes&quot;, considerAllLhsCorrNodes); &#xD;&#xA;&#x9;&#x9;parameters.put(&quot;__inputTggNode&quot;, inputTggNode);&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;((de.mdelab.migmm.sample.ecore2java.generated.ecore2javaOperationalTGG) this.getOperationalRuleGroup().getOperationalTGG()).executeActivity(this.getTransformMappingActivity(), parameters);&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;final ErrorCodeEnum errorCode = (ErrorCodeEnum) parameters.get(&quot;__errorCode&quot;);&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;return errorCode;">
+          <genParameters ecoreParameter="ecore2java.ecore#//generated/ecore2javaClassRule_r1/transformMapping/inputTggNode"/>
+          <genParameters ecoreParameter="ecore2java.ecore#//generated/ecore2javaClassRule_r1/transformMapping/checkAttributeFormulae"/>
+          <genParameters ecoreParameter="ecore2java.ecore#//generated/ecore2javaClassRule_r1/transformMapping/considerAllLhsCorrNodes"/>
+        </genOperations>
+        <genOperations ecoreOperation="ecore2java.ecore#//generated/ecore2javaClassRule_r1/transformBackward"
+            body="&#xD;&#xA;final org.eclipse.emf.common.util.EMap&lt;String, Object> parameters = new org.eclipse.emf.common.util.BasicEMap&lt;String, Object>();&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;parameters.put(&quot;__thisRule&quot;, this);&#xD;&#xA;&#x9;&#x9;parameters.put(&quot;__checkAttributeFormulae&quot;, checkAttributeFormulae);&#xD;&#xA;&#x9;&#x9;parameters.put(&quot;__considerAllLhsCorrNodes&quot;, considerAllLhsCorrNodes); &#xD;&#xA;&#x9;&#x9;parameters.put(&quot;__inputTggNode&quot;, inputTggNode);&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;((de.mdelab.migmm.sample.ecore2java.generated.ecore2javaOperationalTGG) this.getOperationalRuleGroup().getOperationalTGG()).executeActivity(this.getTransformBackwardActivity(), parameters);&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;final ErrorCodeEnum errorCode = (ErrorCodeEnum) parameters.get(&quot;__errorCode&quot;);&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;return errorCode;">
+          <genParameters ecoreParameter="ecore2java.ecore#//generated/ecore2javaClassRule_r1/transformBackward/inputTggNode"/>
+          <genParameters ecoreParameter="ecore2java.ecore#//generated/ecore2javaClassRule_r1/transformBackward/checkAttributeFormulae"/>
+          <genParameters ecoreParameter="ecore2java.ecore#//generated/ecore2javaClassRule_r1/transformBackward/considerAllLhsCorrNodes"/>
+        </genOperations>
+        <genOperations ecoreOperation="ecore2java.ecore#//generated/ecore2javaClassRule_r1/conflictCheckForward"
+            body="&#xD;&#xA;final org.eclipse.emf.common.util.EMap&lt;String, Object> parameters = new org.eclipse.emf.common.util.BasicEMap&lt;String, Object>();&#xD;&#xA;&#xD;&#xA;parameters.put(&quot;__thisRule&quot;, this);&#xD;&#xA;parameters.put(&quot;__inputTggNode&quot;, inputTggNode);&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;((de.mdelab.migmm.sample.ecore2java.generated.ecore2javaOperationalTGG) this.getOperationalRuleGroup().getOperationalTGG()).executeActivity(this.getConflictCheckForwardActivity(), parameters);&#xD;&#xA;&#xD;&#xA;@SuppressWarnings(&quot;unchecked&quot;)&#xD;&#xA;final java.util.Collection&lt;? extends EObject> returnValue = (java.util.Collection&lt;? extends EObject>) parameters.get(&quot;__returnValue&quot;);&#xD;&#xA;&#xD;&#xA;if (returnValue == null)&#xD;&#xA;{&#xD;&#xA;&#x9;return null;&#xD;&#xA;}&#xD;&#xA;else&#xD;&#xA;{&#xD;&#xA;&#x9;return new org.eclipse.emf.common.util.BasicEList&lt;EObject>(returnValue);&#xD;&#xA;}&#xD;&#xA;">
+          <genParameters ecoreParameter="ecore2java.ecore#//generated/ecore2javaClassRule_r1/conflictCheckForward/inputTggNode"/>
+        </genOperations>
+        <genOperations ecoreOperation="ecore2java.ecore#//generated/ecore2javaClassRule_r1/conflictCheckMapping"
+            body="&#xD;&#xA;final org.eclipse.emf.common.util.EMap&lt;String, Object> parameters = new org.eclipse.emf.common.util.BasicEMap&lt;String, Object>();&#xD;&#xA;&#xD;&#xA;parameters.put(&quot;__thisRule&quot;, this);&#xD;&#xA;parameters.put(&quot;__inputTggNode&quot;, inputTggNode);&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;((de.mdelab.migmm.sample.ecore2java.generated.ecore2javaOperationalTGG) this.getOperationalRuleGroup().getOperationalTGG()).executeActivity(this.getConflictCheckMappingActivity(), parameters);&#xD;&#xA;&#xD;&#xA;@SuppressWarnings(&quot;unchecked&quot;)&#xD;&#xA;final java.util.Collection&lt;? extends EObject> returnValue = (java.util.Collection&lt;? extends EObject>) parameters.get(&quot;__returnValue&quot;);&#xD;&#xA;&#xD;&#xA;if (returnValue == null)&#xD;&#xA;{&#xD;&#xA;&#x9;return null;&#xD;&#xA;}&#xD;&#xA;else&#xD;&#xA;{&#xD;&#xA;&#x9;return new org.eclipse.emf.common.util.BasicEList&lt;EObject>(returnValue);&#xD;&#xA;}&#xD;&#xA;">
+          <genParameters ecoreParameter="ecore2java.ecore#//generated/ecore2javaClassRule_r1/conflictCheckMapping/inputTggNode"/>
+        </genOperations>
+        <genOperations ecoreOperation="ecore2java.ecore#//generated/ecore2javaClassRule_r1/conflictCheckBackward"
+            body="&#xD;&#xA;final org.eclipse.emf.common.util.EMap&lt;String, Object> parameters = new org.eclipse.emf.common.util.BasicEMap&lt;String, Object>();&#xD;&#xA;&#xD;&#xA;parameters.put(&quot;__thisRule&quot;, this);&#xD;&#xA;parameters.put(&quot;__inputTggNode&quot;, inputTggNode);&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;((de.mdelab.migmm.sample.ecore2java.generated.ecore2javaOperationalTGG) this.getOperationalRuleGroup().getOperationalTGG()).executeActivity(this.getConflictCheckBackwardActivity(), parameters);&#xD;&#xA;&#xD;&#xA;@SuppressWarnings(&quot;unchecked&quot;)&#xD;&#xA;final java.util.Collection&lt;? extends EObject> returnValue = (java.util.Collection&lt;? extends EObject>) parameters.get(&quot;__returnValue&quot;);&#xD;&#xA;&#xD;&#xA;if (returnValue == null)&#xD;&#xA;{&#xD;&#xA;&#x9;return null;&#xD;&#xA;}&#xD;&#xA;else&#xD;&#xA;{&#xD;&#xA;&#x9;return new org.eclipse.emf.common.util.BasicEList&lt;EObject>(returnValue);&#xD;&#xA;}&#xD;&#xA;">
+          <genParameters ecoreParameter="ecore2java.ecore#//generated/ecore2javaClassRule_r1/conflictCheckBackward/inputTggNode"/>
+        </genOperations>
+        <genOperations ecoreOperation="ecore2java.ecore#//generated/ecore2javaClassRule_r1/synchronizeForward"
+            body="&#xD;&#xA;final org.eclipse.emf.common.util.EMap&lt;String, Object> parameters = new org.eclipse.emf.common.util.BasicEMap&lt;String, Object>();&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;parameters.put(&quot;__thisRule&quot;, this);&#xD;&#xA;&#x9;&#x9;parameters.put(&quot;__checkAttributeFormulae&quot;, checkAttributeFormulae);&#xD;&#xA;&#x9;&#x9;parameters.put(&quot;__inputTggNode&quot;, inputTggNode);&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;((de.mdelab.migmm.sample.ecore2java.generated.ecore2javaOperationalTGG) this.getOperationalRuleGroup().getOperationalTGG()).executeActivity(this.getSynchronizeForwardActivity(), parameters);&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;final ErrorCodeEnum errorCode = (ErrorCodeEnum) parameters.get(&quot;__errorCode&quot;);&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;return errorCode;">
+          <genParameters ecoreParameter="ecore2java.ecore#//generated/ecore2javaClassRule_r1/synchronizeForward/inputTggNode"/>
+          <genParameters ecoreParameter="ecore2java.ecore#//generated/ecore2javaClassRule_r1/synchronizeForward/checkAttributeFormulae"/>
+        </genOperations>
+        <genOperations ecoreOperation="ecore2java.ecore#//generated/ecore2javaClassRule_r1/synchronizeBackward"
+            body="&#xD;&#xA;final org.eclipse.emf.common.util.EMap&lt;String, Object> parameters = new org.eclipse.emf.common.util.BasicEMap&lt;String, Object>();&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;parameters.put(&quot;__thisRule&quot;, this);&#xD;&#xA;&#x9;&#x9;parameters.put(&quot;__checkAttributeFormulae&quot;, checkAttributeFormulae);&#xD;&#xA;&#x9;&#x9;parameters.put(&quot;__inputTggNode&quot;, inputTggNode);&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;((de.mdelab.migmm.sample.ecore2java.generated.ecore2javaOperationalTGG) this.getOperationalRuleGroup().getOperationalTGG()).executeActivity(this.getSynchronizeBackwardActivity(), parameters);&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;final ErrorCodeEnum errorCode = (ErrorCodeEnum) parameters.get(&quot;__errorCode&quot;);&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;return errorCode;">
+          <genParameters ecoreParameter="ecore2java.ecore#//generated/ecore2javaClassRule_r1/synchronizeBackward/inputTggNode"/>
+          <genParameters ecoreParameter="ecore2java.ecore#//generated/ecore2javaClassRule_r1/synchronizeBackward/checkAttributeFormulae"/>
+        </genOperations>
+        <genOperations ecoreOperation="ecore2java.ecore#//generated/ecore2javaClassRule_r1/repairForward"
+            body="&#xD;&#xA;final org.eclipse.emf.common.util.EMap&lt;String, Object> parameters = new org.eclipse.emf.common.util.BasicEMap&lt;String, Object>();&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;parameters.put(&quot;__thisRule&quot;, this);&#xD;&#xA;&#x9;&#x9;parameters.put(&quot;__checkAttributeFormulae&quot;, checkAttributeFormulae);&#xD;&#xA;&#x9;&#x9;parameters.put(&quot;__inputTggNode&quot;, inputTggNode);&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;((de.mdelab.migmm.sample.ecore2java.generated.ecore2javaOperationalTGG) this.getOperationalRuleGroup().getOperationalTGG()).executeActivity(this.getRepairForwardActivity(), parameters);&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;final ErrorCodeEnum errorCode = (ErrorCodeEnum) parameters.get(&quot;__errorCode&quot;);&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;return errorCode;">
+          <genParameters ecoreParameter="ecore2java.ecore#//generated/ecore2javaClassRule_r1/repairForward/inputTggNode"/>
+          <genParameters ecoreParameter="ecore2java.ecore#//generated/ecore2javaClassRule_r1/repairForward/checkAttributeFormulae"/>
+        </genOperations>
+        <genOperations ecoreOperation="ecore2java.ecore#//generated/ecore2javaClassRule_r1/repairBackward"
+            body="&#xD;&#xA;final org.eclipse.emf.common.util.EMap&lt;String, Object> parameters = new org.eclipse.emf.common.util.BasicEMap&lt;String, Object>();&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;parameters.put(&quot;__thisRule&quot;, this);&#xD;&#xA;&#x9;&#x9;parameters.put(&quot;__checkAttributeFormulae&quot;, checkAttributeFormulae);&#xD;&#xA;&#x9;&#x9;parameters.put(&quot;__inputTggNode&quot;, inputTggNode);&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;((de.mdelab.migmm.sample.ecore2java.generated.ecore2javaOperationalTGG) this.getOperationalRuleGroup().getOperationalTGG()).executeActivity(this.getRepairBackwardActivity(), parameters);&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;final ErrorCodeEnum errorCode = (ErrorCodeEnum) parameters.get(&quot;__errorCode&quot;);&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;return errorCode;">
+          <genParameters ecoreParameter="ecore2java.ecore#//generated/ecore2javaClassRule_r1/repairBackward/inputTggNode"/>
+          <genParameters ecoreParameter="ecore2java.ecore#//generated/ecore2javaClassRule_r1/repairBackward/checkAttributeFormulae"/>
+        </genOperations>
+      </genClasses>
+      <genClasses ecoreClass="ecore2java.ecore#//generated/ecore2javaAttributeRule_r1">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference ecore2java.ecore#//generated/ecore2javaAttributeRule_r1/addElementActivity"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference ecore2java.ecore#//generated/ecore2javaAttributeRule_r1/moveElementActivity"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference ecore2java.ecore#//generated/ecore2javaAttributeRule_r1/changeAttributeActivity"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference ecore2java.ecore#//generated/ecore2javaAttributeRule_r1/transformForwardActivity"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference ecore2java.ecore#//generated/ecore2javaAttributeRule_r1/transformMappingActivity"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference ecore2java.ecore#//generated/ecore2javaAttributeRule_r1/transformBackwardActivity"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference ecore2java.ecore#//generated/ecore2javaAttributeRule_r1/conflictCheckForwardActivity"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference ecore2java.ecore#//generated/ecore2javaAttributeRule_r1/conflictCheckMappingActivity"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference ecore2java.ecore#//generated/ecore2javaAttributeRule_r1/conflictCheckBackwardActivity"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference ecore2java.ecore#//generated/ecore2javaAttributeRule_r1/synchronizeForwardActivity"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference ecore2java.ecore#//generated/ecore2javaAttributeRule_r1/synchronizeBackwardActivity"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference ecore2java.ecore#//generated/ecore2javaAttributeRule_r1/repairForwardActivity"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference ecore2java.ecore#//generated/ecore2javaAttributeRule_r1/repairBackwardActivity"/>
+        <genOperations ecoreOperation="ecore2java.ecore#//generated/ecore2javaAttributeRule_r1/addElement"
+            body="final EMap&lt;String, Object> parametersCopy = new org.eclipse.emf.common.util.BasicEMap&lt;String, Object>(parameters.map());&#xD;&#xA;&#xD;&#xA;((de.mdelab.migmm.sample.ecore2java.generated.ecore2javaOperationalTGG) this.getOperationalRuleGroup().getOperationalTGG()).executeActivity(this.getAddElementActivity(),&#x9;parametersCopy);&#xD;&#xA;&#xD;&#xA;return (TGGNode) parametersCopy.get(&quot;corrAttribute&quot;);">
+          <genParameters ecoreParameter="ecore2java.ecore#//generated/ecore2javaAttributeRule_r1/addElement/parameters"/>
+        </genOperations>
+        <genOperations ecoreOperation="ecore2java.ecore#//generated/ecore2javaAttributeRule_r1/changeAttributeValues"
+            body="org.eclipse.emf.common.util.EMap&lt;String, Object> params = new org.eclipse.emf.common.util.BasicEMap&lt;String, Object>(ruleParameters.map());&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;params.put(&quot;corrAttribute&quot;, correspondenceNode);&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;((de.mdelab.migmm.sample.ecore2java.generated.ecore2javaOperationalTGG) this&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;.getOperationalRuleGroup().getOperationalTGG())&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;.executeActivity(this.getChangeAttributeActivity(), params);&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;return (Boolean) params.get(&quot;__returnValue&quot;);">
+          <genParameters ecoreParameter="ecore2java.ecore#//generated/ecore2javaAttributeRule_r1/changeAttributeValues/correspondenceNode"/>
+          <genParameters ecoreParameter="ecore2java.ecore#//generated/ecore2javaAttributeRule_r1/changeAttributeValues/ruleParameters"/>
+        </genOperations>
+        <genOperations ecoreOperation="ecore2java.ecore#//generated/ecore2javaAttributeRule_r1/moveElement"
+            body="org.eclipse.emf.common.util.EMap&lt;String, Object> params = new org.eclipse.emf.common.util.BasicEMap&lt;String, Object>();&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;params.put(&quot;corrAttribute&quot;, correspondenceNode);&#xD;&#xA;params.put(&quot;__oldPreviousCorrespondenceNode&quot;, oldPreviousCorrespondenceNode);&#xD;&#xA;params.put(&quot;__newPreviousCorrespondenceNode&quot;, newPreviousCorrespondenceNode);&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;((de.mdelab.migmm.sample.ecore2java.generated.ecore2javaOperationalTGG) this&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;.getOperationalRuleGroup().getOperationalTGG())&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;.executeActivity(this.getMoveElementActivity(), params);&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;return (Boolean) params.get(&quot;__returnValue&quot;);">
+          <genParameters ecoreParameter="ecore2java.ecore#//generated/ecore2javaAttributeRule_r1/moveElement/correspondenceNode"/>
+          <genParameters ecoreParameter="ecore2java.ecore#//generated/ecore2javaAttributeRule_r1/moveElement/oldPreviousCorrespondenceNode"/>
+          <genParameters ecoreParameter="ecore2java.ecore#//generated/ecore2javaAttributeRule_r1/moveElement/newPreviousCorrespondenceNode"/>
+        </genOperations>
+        <genOperations ecoreOperation="ecore2java.ecore#//generated/ecore2javaAttributeRule_r1/transformForward"
+            body="&#xD;&#xA;final org.eclipse.emf.common.util.EMap&lt;String, Object> parameters = new org.eclipse.emf.common.util.BasicEMap&lt;String, Object>();&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;parameters.put(&quot;__thisRule&quot;, this);&#xD;&#xA;&#x9;&#x9;parameters.put(&quot;__checkAttributeFormulae&quot;, checkAttributeFormulae);&#xD;&#xA;&#x9;&#x9;parameters.put(&quot;__considerAllLhsCorrNodes&quot;, considerAllLhsCorrNodes); &#xD;&#xA;&#x9;&#x9;parameters.put(&quot;__inputTggNode&quot;, inputTggNode);&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;((de.mdelab.migmm.sample.ecore2java.generated.ecore2javaOperationalTGG) this.getOperationalRuleGroup().getOperationalTGG()).executeActivity(this.getTransformForwardActivity(), parameters);&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;final ErrorCodeEnum errorCode = (ErrorCodeEnum) parameters.get(&quot;__errorCode&quot;);&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;return errorCode;">
+          <genParameters ecoreParameter="ecore2java.ecore#//generated/ecore2javaAttributeRule_r1/transformForward/inputTggNode"/>
+          <genParameters ecoreParameter="ecore2java.ecore#//generated/ecore2javaAttributeRule_r1/transformForward/checkAttributeFormulae"/>
+          <genParameters ecoreParameter="ecore2java.ecore#//generated/ecore2javaAttributeRule_r1/transformForward/considerAllLhsCorrNodes"/>
+        </genOperations>
+        <genOperations ecoreOperation="ecore2java.ecore#//generated/ecore2javaAttributeRule_r1/transformMapping"
+            body="&#xD;&#xA;final org.eclipse.emf.common.util.EMap&lt;String, Object> parameters = new org.eclipse.emf.common.util.BasicEMap&lt;String, Object>();&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;parameters.put(&quot;__thisRule&quot;, this);&#xD;&#xA;&#x9;&#x9;parameters.put(&quot;__checkAttributeFormulae&quot;, checkAttributeFormulae);&#xD;&#xA;&#x9;&#x9;parameters.put(&quot;__considerAllLhsCorrNodes&quot;, considerAllLhsCorrNodes); &#xD;&#xA;&#x9;&#x9;parameters.put(&quot;__inputTggNode&quot;, inputTggNode);&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;((de.mdelab.migmm.sample.ecore2java.generated.ecore2javaOperationalTGG) this.getOperationalRuleGroup().getOperationalTGG()).executeActivity(this.getTransformMappingActivity(), parameters);&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;final ErrorCodeEnum errorCode = (ErrorCodeEnum) parameters.get(&quot;__errorCode&quot;);&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;return errorCode;">
+          <genParameters ecoreParameter="ecore2java.ecore#//generated/ecore2javaAttributeRule_r1/transformMapping/inputTggNode"/>
+          <genParameters ecoreParameter="ecore2java.ecore#//generated/ecore2javaAttributeRule_r1/transformMapping/checkAttributeFormulae"/>
+          <genParameters ecoreParameter="ecore2java.ecore#//generated/ecore2javaAttributeRule_r1/transformMapping/considerAllLhsCorrNodes"/>
+        </genOperations>
+        <genOperations ecoreOperation="ecore2java.ecore#//generated/ecore2javaAttributeRule_r1/transformBackward"
+            body="&#xD;&#xA;final org.eclipse.emf.common.util.EMap&lt;String, Object> parameters = new org.eclipse.emf.common.util.BasicEMap&lt;String, Object>();&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;parameters.put(&quot;__thisRule&quot;, this);&#xD;&#xA;&#x9;&#x9;parameters.put(&quot;__checkAttributeFormulae&quot;, checkAttributeFormulae);&#xD;&#xA;&#x9;&#x9;parameters.put(&quot;__considerAllLhsCorrNodes&quot;, considerAllLhsCorrNodes); &#xD;&#xA;&#x9;&#x9;parameters.put(&quot;__inputTggNode&quot;, inputTggNode);&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;((de.mdelab.migmm.sample.ecore2java.generated.ecore2javaOperationalTGG) this.getOperationalRuleGroup().getOperationalTGG()).executeActivity(this.getTransformBackwardActivity(), parameters);&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;final ErrorCodeEnum errorCode = (ErrorCodeEnum) parameters.get(&quot;__errorCode&quot;);&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;return errorCode;">
+          <genParameters ecoreParameter="ecore2java.ecore#//generated/ecore2javaAttributeRule_r1/transformBackward/inputTggNode"/>
+          <genParameters ecoreParameter="ecore2java.ecore#//generated/ecore2javaAttributeRule_r1/transformBackward/checkAttributeFormulae"/>
+          <genParameters ecoreParameter="ecore2java.ecore#//generated/ecore2javaAttributeRule_r1/transformBackward/considerAllLhsCorrNodes"/>
+        </genOperations>
+        <genOperations ecoreOperation="ecore2java.ecore#//generated/ecore2javaAttributeRule_r1/conflictCheckForward"
+            body="&#xD;&#xA;final org.eclipse.emf.common.util.EMap&lt;String, Object> parameters = new org.eclipse.emf.common.util.BasicEMap&lt;String, Object>();&#xD;&#xA;&#xD;&#xA;parameters.put(&quot;__thisRule&quot;, this);&#xD;&#xA;parameters.put(&quot;__inputTggNode&quot;, inputTggNode);&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;((de.mdelab.migmm.sample.ecore2java.generated.ecore2javaOperationalTGG) this.getOperationalRuleGroup().getOperationalTGG()).executeActivity(this.getConflictCheckForwardActivity(), parameters);&#xD;&#xA;&#xD;&#xA;@SuppressWarnings(&quot;unchecked&quot;)&#xD;&#xA;final java.util.Collection&lt;? extends EObject> returnValue = (java.util.Collection&lt;? extends EObject>) parameters.get(&quot;__returnValue&quot;);&#xD;&#xA;&#xD;&#xA;if (returnValue == null)&#xD;&#xA;{&#xD;&#xA;&#x9;return null;&#xD;&#xA;}&#xD;&#xA;else&#xD;&#xA;{&#xD;&#xA;&#x9;return new org.eclipse.emf.common.util.BasicEList&lt;EObject>(returnValue);&#xD;&#xA;}&#xD;&#xA;">
+          <genParameters ecoreParameter="ecore2java.ecore#//generated/ecore2javaAttributeRule_r1/conflictCheckForward/inputTggNode"/>
+        </genOperations>
+        <genOperations ecoreOperation="ecore2java.ecore#//generated/ecore2javaAttributeRule_r1/conflictCheckMapping"
+            body="&#xD;&#xA;final org.eclipse.emf.common.util.EMap&lt;String, Object> parameters = new org.eclipse.emf.common.util.BasicEMap&lt;String, Object>();&#xD;&#xA;&#xD;&#xA;parameters.put(&quot;__thisRule&quot;, this);&#xD;&#xA;parameters.put(&quot;__inputTggNode&quot;, inputTggNode);&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;((de.mdelab.migmm.sample.ecore2java.generated.ecore2javaOperationalTGG) this.getOperationalRuleGroup().getOperationalTGG()).executeActivity(this.getConflictCheckMappingActivity(), parameters);&#xD;&#xA;&#xD;&#xA;@SuppressWarnings(&quot;unchecked&quot;)&#xD;&#xA;final java.util.Collection&lt;? extends EObject> returnValue = (java.util.Collection&lt;? extends EObject>) parameters.get(&quot;__returnValue&quot;);&#xD;&#xA;&#xD;&#xA;if (returnValue == null)&#xD;&#xA;{&#xD;&#xA;&#x9;return null;&#xD;&#xA;}&#xD;&#xA;else&#xD;&#xA;{&#xD;&#xA;&#x9;return new org.eclipse.emf.common.util.BasicEList&lt;EObject>(returnValue);&#xD;&#xA;}&#xD;&#xA;">
+          <genParameters ecoreParameter="ecore2java.ecore#//generated/ecore2javaAttributeRule_r1/conflictCheckMapping/inputTggNode"/>
+        </genOperations>
+        <genOperations ecoreOperation="ecore2java.ecore#//generated/ecore2javaAttributeRule_r1/conflictCheckBackward"
+            body="&#xD;&#xA;final org.eclipse.emf.common.util.EMap&lt;String, Object> parameters = new org.eclipse.emf.common.util.BasicEMap&lt;String, Object>();&#xD;&#xA;&#xD;&#xA;parameters.put(&quot;__thisRule&quot;, this);&#xD;&#xA;parameters.put(&quot;__inputTggNode&quot;, inputTggNode);&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;((de.mdelab.migmm.sample.ecore2java.generated.ecore2javaOperationalTGG) this.getOperationalRuleGroup().getOperationalTGG()).executeActivity(this.getConflictCheckBackwardActivity(), parameters);&#xD;&#xA;&#xD;&#xA;@SuppressWarnings(&quot;unchecked&quot;)&#xD;&#xA;final java.util.Collection&lt;? extends EObject> returnValue = (java.util.Collection&lt;? extends EObject>) parameters.get(&quot;__returnValue&quot;);&#xD;&#xA;&#xD;&#xA;if (returnValue == null)&#xD;&#xA;{&#xD;&#xA;&#x9;return null;&#xD;&#xA;}&#xD;&#xA;else&#xD;&#xA;{&#xD;&#xA;&#x9;return new org.eclipse.emf.common.util.BasicEList&lt;EObject>(returnValue);&#xD;&#xA;}&#xD;&#xA;">
+          <genParameters ecoreParameter="ecore2java.ecore#//generated/ecore2javaAttributeRule_r1/conflictCheckBackward/inputTggNode"/>
+        </genOperations>
+        <genOperations ecoreOperation="ecore2java.ecore#//generated/ecore2javaAttributeRule_r1/synchronizeForward"
+            body="&#xD;&#xA;final org.eclipse.emf.common.util.EMap&lt;String, Object> parameters = new org.eclipse.emf.common.util.BasicEMap&lt;String, Object>();&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;parameters.put(&quot;__thisRule&quot;, this);&#xD;&#xA;&#x9;&#x9;parameters.put(&quot;__checkAttributeFormulae&quot;, checkAttributeFormulae);&#xD;&#xA;&#x9;&#x9;parameters.put(&quot;__inputTggNode&quot;, inputTggNode);&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;((de.mdelab.migmm.sample.ecore2java.generated.ecore2javaOperationalTGG) this.getOperationalRuleGroup().getOperationalTGG()).executeActivity(this.getSynchronizeForwardActivity(), parameters);&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;final ErrorCodeEnum errorCode = (ErrorCodeEnum) parameters.get(&quot;__errorCode&quot;);&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;return errorCode;">
+          <genParameters ecoreParameter="ecore2java.ecore#//generated/ecore2javaAttributeRule_r1/synchronizeForward/inputTggNode"/>
+          <genParameters ecoreParameter="ecore2java.ecore#//generated/ecore2javaAttributeRule_r1/synchronizeForward/checkAttributeFormulae"/>
+        </genOperations>
+        <genOperations ecoreOperation="ecore2java.ecore#//generated/ecore2javaAttributeRule_r1/synchronizeBackward"
+            body="&#xD;&#xA;final org.eclipse.emf.common.util.EMap&lt;String, Object> parameters = new org.eclipse.emf.common.util.BasicEMap&lt;String, Object>();&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;parameters.put(&quot;__thisRule&quot;, this);&#xD;&#xA;&#x9;&#x9;parameters.put(&quot;__checkAttributeFormulae&quot;, checkAttributeFormulae);&#xD;&#xA;&#x9;&#x9;parameters.put(&quot;__inputTggNode&quot;, inputTggNode);&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;((de.mdelab.migmm.sample.ecore2java.generated.ecore2javaOperationalTGG) this.getOperationalRuleGroup().getOperationalTGG()).executeActivity(this.getSynchronizeBackwardActivity(), parameters);&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;final ErrorCodeEnum errorCode = (ErrorCodeEnum) parameters.get(&quot;__errorCode&quot;);&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;return errorCode;">
+          <genParameters ecoreParameter="ecore2java.ecore#//generated/ecore2javaAttributeRule_r1/synchronizeBackward/inputTggNode"/>
+          <genParameters ecoreParameter="ecore2java.ecore#//generated/ecore2javaAttributeRule_r1/synchronizeBackward/checkAttributeFormulae"/>
+        </genOperations>
+        <genOperations ecoreOperation="ecore2java.ecore#//generated/ecore2javaAttributeRule_r1/repairForward"
+            body="&#xD;&#xA;final org.eclipse.emf.common.util.EMap&lt;String, Object> parameters = new org.eclipse.emf.common.util.BasicEMap&lt;String, Object>();&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;parameters.put(&quot;__thisRule&quot;, this);&#xD;&#xA;&#x9;&#x9;parameters.put(&quot;__checkAttributeFormulae&quot;, checkAttributeFormulae);&#xD;&#xA;&#x9;&#x9;parameters.put(&quot;__inputTggNode&quot;, inputTggNode);&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;((de.mdelab.migmm.sample.ecore2java.generated.ecore2javaOperationalTGG) this.getOperationalRuleGroup().getOperationalTGG()).executeActivity(this.getRepairForwardActivity(), parameters);&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;final ErrorCodeEnum errorCode = (ErrorCodeEnum) parameters.get(&quot;__errorCode&quot;);&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;return errorCode;">
+          <genParameters ecoreParameter="ecore2java.ecore#//generated/ecore2javaAttributeRule_r1/repairForward/inputTggNode"/>
+          <genParameters ecoreParameter="ecore2java.ecore#//generated/ecore2javaAttributeRule_r1/repairForward/checkAttributeFormulae"/>
+        </genOperations>
+        <genOperations ecoreOperation="ecore2java.ecore#//generated/ecore2javaAttributeRule_r1/repairBackward"
+            body="&#xD;&#xA;final org.eclipse.emf.common.util.EMap&lt;String, Object> parameters = new org.eclipse.emf.common.util.BasicEMap&lt;String, Object>();&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;parameters.put(&quot;__thisRule&quot;, this);&#xD;&#xA;&#x9;&#x9;parameters.put(&quot;__checkAttributeFormulae&quot;, checkAttributeFormulae);&#xD;&#xA;&#x9;&#x9;parameters.put(&quot;__inputTggNode&quot;, inputTggNode);&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;((de.mdelab.migmm.sample.ecore2java.generated.ecore2javaOperationalTGG) this.getOperationalRuleGroup().getOperationalTGG()).executeActivity(this.getRepairBackwardActivity(), parameters);&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;final ErrorCodeEnum errorCode = (ErrorCodeEnum) parameters.get(&quot;__errorCode&quot;);&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;return errorCode;">
+          <genParameters ecoreParameter="ecore2java.ecore#//generated/ecore2javaAttributeRule_r1/repairBackward/inputTggNode"/>
+          <genParameters ecoreParameter="ecore2java.ecore#//generated/ecore2javaAttributeRule_r1/repairBackward/checkAttributeFormulae"/>
+        </genOperations>
+      </genClasses>
+    </nestedGenPackages>
+  </genPackages>
+</genmodel:GenModel>

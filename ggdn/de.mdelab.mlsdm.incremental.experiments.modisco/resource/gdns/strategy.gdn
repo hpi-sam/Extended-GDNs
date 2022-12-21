@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="ASCII"?>
+<gdn:GDN xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:gdn="http://www.mdelab.de/mlsdm/gdn/1.0" xmlns:mlexpressions="http://www.mdelab.de/mlexpressions/1.0" xmlns:mlstorypatterns="http://www.mdelab.de/mlstorypatterns/1.0" root="//@ownedNodes.12">
+  <ownedNodes>
+    <pattern uuid="_Q3MssF5XEeyclrxdILlQAw" name="strategy.1.1.1">
+      <storyPatternLinks xsi:type="mlstorypatterns:StoryPatternLink" uuid="_Q3Mss15XEeyclrxdILlQAw" source="_Q3MssV5XEeyclrxdILlQAw" target="_Q3Mssl5XEeyclrxdILlQAw">
+        <feature xsi:type="ecore:EReference" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//MethodDeclaration/redefinedMethodDeclaration"/>
+      </storyPatternLinks>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_Q3MssV5XEeyclrxdILlQAw" name="source" outgoingLinks="_Q3Mss15XEeyclrxdILlQAw" bindingType="CAN_BE_BOUND">
+        <type xsi:type="ecore:EClass" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//MethodDeclaration"/>
+      </storyPatternObjects>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_Q3Mssl5XEeyclrxdILlQAw" name="target" incomingLinks="_Q3Mss15XEeyclrxdILlQAw" bindingType="CAN_BE_BOUND">
+        <type xsi:type="ecore:EClass" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//MethodDeclaration"/>
+      </storyPatternObjects>
+    </pattern>
+  </ownedNodes>
+  <ownedNodes>
+    <pattern uuid="_Q3MstF5XEeyclrxdILlQAw" name="strategy.1.1.2.1">
+      <storyPatternLinks xsi:type="mlstorypatterns:StoryPatternLink" uuid="_Q3Mst15XEeyclrxdILlQAw" source="_Q3MstV5XEeyclrxdILlQAw" target="_Q3Mstl5XEeyclrxdILlQAw">
+        <feature xsi:type="ecore:EReference" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//AbstractTypeDeclaration/bodyDeclarations"/>
+      </storyPatternLinks>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_Q3MstV5XEeyclrxdILlQAw" name="source" outgoingLinks="_Q3Mst15XEeyclrxdILlQAw" bindingType="CAN_BE_BOUND">
+        <type xsi:type="ecore:EClass" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//ClassDeclaration"/>
+      </storyPatternObjects>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_Q3Mstl5XEeyclrxdILlQAw" name="target" incomingLinks="_Q3Mst15XEeyclrxdILlQAw" bindingType="CAN_BE_BOUND">
+        <type xsi:type="ecore:EClass" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//FieldDeclaration"/>
+      </storyPatternObjects>
+    </pattern>
+  </ownedNodes>
+  <ownedNodes>
+    <pattern uuid="_Q3MsuF5XEeyclrxdILlQAw" name="strategy.1.1.2.2.1">
+      <storyPatternLinks xsi:type="mlstorypatterns:StoryPatternLink" uuid="_Q3Msu15XEeyclrxdILlQAw" source="_Q3MsuV5XEeyclrxdILlQAw" target="_Q3Msul5XEeyclrxdILlQAw">
+        <feature xsi:type="ecore:EReference" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//ClassDeclaration/superClass"/>
+      </storyPatternLinks>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_Q3MsuV5XEeyclrxdILlQAw" name="source" outgoingLinks="_Q3Msu15XEeyclrxdILlQAw" bindingType="CAN_BE_BOUND">
+        <type xsi:type="ecore:EClass" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//ClassDeclaration"/>
+      </storyPatternObjects>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_Q3Msul5XEeyclrxdILlQAw" name="target" incomingLinks="_Q3Msu15XEeyclrxdILlQAw" bindingType="CAN_BE_BOUND">
+        <type xsi:type="ecore:EClass" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//TypeAccess"/>
+      </storyPatternObjects>
+    </pattern>
+  </ownedNodes>
+  <ownedNodes>
+    <pattern uuid="_Q3MsvF5XEeyclrxdILlQAw" name="strategy.1.1.2.2.2">
+      <storyPatternLinks xsi:type="mlstorypatterns:StoryPatternLink" uuid="_Q3Msv15XEeyclrxdILlQAw" source="_Q3MsvV5XEeyclrxdILlQAw" target="_Q3Msvl5XEeyclrxdILlQAw">
+        <feature xsi:type="ecore:EReference" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//TypeAccess/type"/>
+      </storyPatternLinks>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_Q3MsvV5XEeyclrxdILlQAw" name="source" outgoingLinks="_Q3Msv15XEeyclrxdILlQAw" bindingType="CAN_BE_BOUND">
+        <type xsi:type="ecore:EClass" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//TypeAccess"/>
+      </storyPatternObjects>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_Q3Msvl5XEeyclrxdILlQAw" name="target" incomingLinks="_Q3Msv15XEeyclrxdILlQAw" bindingType="CAN_BE_BOUND">
+        <type xsi:type="ecore:EClass" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//ClassDeclaration"/>
+      </storyPatternObjects>
+    </pattern>
+  </ownedNodes>
+  <ownedNodes>
+    <dependencies node="//@ownedNodes.2" indexConstraint="_Q3Msw15XEeyclrxdILlQAw">
+      <mappings parentVertex="_Q3MsuV5XEeyclrxdILlQAw" childVertex="_Q3MswV5XEeyclrxdILlQAw" indexPosition="1"/>
+      <mappings parentVertex="_Q3Msul5XEeyclrxdILlQAw" childVertex="_Q3Mswl5XEeyclrxdILlQAw"/>
+    </dependencies>
+    <dependencies node="//@ownedNodes.3" indexConstraint="_Q3MsxV5XEeyclrxdILlQAw">
+      <mappings parentVertex="_Q3MsvV5XEeyclrxdILlQAw" childVertex="_Q3Mswl5XEeyclrxdILlQAw"/>
+      <mappings parentVertex="_Q3Msvl5XEeyclrxdILlQAw" childVertex="_Q3MsxF5XEeyclrxdILlQAw" indexPosition="1"/>
+    </dependencies>
+    <pattern uuid="_Q3MswF5XEeyclrxdILlQAw" name="strategy.1.1.2.2">
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_Q3MswV5XEeyclrxdILlQAw" name="node0" bindingType="CAN_BE_BOUND">
+        <type xsi:type="ecore:EClass" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//ClassDeclaration"/>
+      </storyPatternObjects>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_Q3Mswl5XEeyclrxdILlQAw" name="node1" bindingType="CAN_BE_BOUND">
+        <type xsi:type="ecore:EClass" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//TypeAccess"/>
+      </storyPatternObjects>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_Q3MsxF5XEeyclrxdILlQAw" name="node2" bindingType="CAN_BE_BOUND">
+        <type xsi:type="ecore:EClass" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//ClassDeclaration"/>
+      </storyPatternObjects>
+      <constraints xsi:type="mlexpressions:MLStringExpression" uuid="_Q3Msw15XEeyclrxdILlQAw" expressionString="left CONTAINS (node1, node0)" expressionLanguageID="ICL"/>
+      <constraints xsi:type="mlexpressions:MLStringExpression" uuid="_Q3MsxV5XEeyclrxdILlQAw" expressionString="right CONTAINS (node1, node2)" expressionLanguageID="ICL"/>
+    </pattern>
+  </ownedNodes>
+  <ownedNodes>
+    <dependencies node="//@ownedNodes.1" indexConstraint="_Q3MsyV5XEeyclrxdILlQAw">
+      <mappings parentVertex="_Q3MstV5XEeyclrxdILlQAw" childVertex="_Q3Msx15XEeyclrxdILlQAw"/>
+      <mappings parentVertex="_Q3Mstl5XEeyclrxdILlQAw" childVertex="_Q3MsyF5XEeyclrxdILlQAw" indexPosition="1"/>
+    </dependencies>
+    <dependencies node="//@ownedNodes.4" indexConstraint="_Q3MszF5XEeyclrxdILlQAw">
+      <mappings parentVertex="_Q3MswV5XEeyclrxdILlQAw" childVertex="_Q3Msx15XEeyclrxdILlQAw"/>
+      <mappings parentVertex="_Q3Mswl5XEeyclrxdILlQAw" childVertex="_Q3Msyl5XEeyclrxdILlQAw" indexPosition="1"/>
+      <mappings parentVertex="_Q3MsxF5XEeyclrxdILlQAw" childVertex="_Q3Msy15XEeyclrxdILlQAw" indexPosition="2"/>
+    </dependencies>
+    <pattern uuid="_Q3Msxl5XEeyclrxdILlQAw" name="strategy.1.1.2">
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_Q3Msx15XEeyclrxdILlQAw" name="node0" bindingType="CAN_BE_BOUND">
+        <type xsi:type="ecore:EClass" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//ClassDeclaration"/>
+      </storyPatternObjects>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_Q3MsyF5XEeyclrxdILlQAw" name="node1" bindingType="CAN_BE_BOUND">
+        <type xsi:type="ecore:EClass" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//FieldDeclaration"/>
+      </storyPatternObjects>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_Q3Msyl5XEeyclrxdILlQAw" name="node2" bindingType="CAN_BE_BOUND">
+        <type xsi:type="ecore:EClass" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//TypeAccess"/>
+      </storyPatternObjects>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_Q3Msy15XEeyclrxdILlQAw" name="node3" bindingType="CAN_BE_BOUND">
+        <type xsi:type="ecore:EClass" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//ClassDeclaration"/>
+      </storyPatternObjects>
+      <constraints xsi:type="mlexpressions:MLStringExpression" uuid="_Q3MsyV5XEeyclrxdILlQAw" expressionString="left CONTAINS (node0, node1)" expressionLanguageID="ICL"/>
+      <constraints xsi:type="mlexpressions:MLStringExpression" uuid="_Q3MszF5XEeyclrxdILlQAw" expressionString="right CONTAINS (node0, node2, node3)" expressionLanguageID="ICL"/>
+    </pattern>
+  </ownedNodes>
+  <ownedNodes>
+    <dependencies node="//@ownedNodes.0" indexConstraint="_Q3Ms0F5XEeyclrxdILlQAw">
+      <mappings parentVertex="_Q3MssV5XEeyclrxdILlQAw" childVertex="_Q3Mszl5XEeyclrxdILlQAw"/>
+      <mappings parentVertex="_Q3Mssl5XEeyclrxdILlQAw" childVertex="_Q3Msz15XEeyclrxdILlQAw" indexPosition="1"/>
+    </dependencies>
+    <dependencies node="//@ownedNodes.5" indexConstraint="_Q3Ms1F5XEeyclrxdILlQAw">
+      <mappings parentVertex="_Q3Msx15XEeyclrxdILlQAw" childVertex="_Q3Ms0V5XEeyclrxdILlQAw" indexPosition="1"/>
+      <mappings parentVertex="_Q3MsyF5XEeyclrxdILlQAw" childVertex="_Q3Mszl5XEeyclrxdILlQAw"/>
+      <mappings parentVertex="_Q3Msyl5XEeyclrxdILlQAw" childVertex="_Q3Ms0l5XEeyclrxdILlQAw" indexPosition="2"/>
+      <mappings parentVertex="_Q3Msy15XEeyclrxdILlQAw" childVertex="_Q3Ms015XEeyclrxdILlQAw" indexPosition="3"/>
+    </dependencies>
+    <pattern uuid="_Q3MszV5XEeyclrxdILlQAw" name="strategy.1.1">
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_Q3Mszl5XEeyclrxdILlQAw" name="node0" bindingType="CAN_BE_BOUND">
+        <type xsi:type="ecore:EClass" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//MethodDeclaration"/>
+      </storyPatternObjects>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_Q3Msz15XEeyclrxdILlQAw" name="node1" bindingType="CAN_BE_BOUND">
+        <type xsi:type="ecore:EClass" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//MethodDeclaration"/>
+      </storyPatternObjects>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_Q3Ms0V5XEeyclrxdILlQAw" name="node2" bindingType="CAN_BE_BOUND">
+        <type xsi:type="ecore:EClass" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//ClassDeclaration"/>
+      </storyPatternObjects>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_Q3Ms0l5XEeyclrxdILlQAw" name="node3" bindingType="CAN_BE_BOUND">
+        <type xsi:type="ecore:EClass" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//TypeAccess"/>
+      </storyPatternObjects>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_Q3Ms015XEeyclrxdILlQAw" name="node4" bindingType="CAN_BE_BOUND">
+        <type xsi:type="ecore:EClass" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//ClassDeclaration"/>
+      </storyPatternObjects>
+      <constraints xsi:type="mlexpressions:MLStringExpression" uuid="_Q3Ms0F5XEeyclrxdILlQAw" expressionString="left CONTAINS (node0, node1)" expressionLanguageID="ICL"/>
+      <constraints xsi:type="mlexpressions:MLStringExpression" uuid="_Q3Ms1F5XEeyclrxdILlQAw" expressionString="right CONTAINS (node0, node2, node3, node4)" expressionLanguageID="ICL"/>
+    </pattern>
+  </ownedNodes>
+  <ownedNodes>
+    <pattern uuid="_Q3Ms1V5XEeyclrxdILlQAw" name="strategy.1.2.1.2.1">
+      <storyPatternLinks xsi:type="mlstorypatterns:StoryPatternLink" uuid="_Q3Ms2F5XEeyclrxdILlQAw" source="_Q3Ms1l5XEeyclrxdILlQAw" target="_Q3Ms115XEeyclrxdILlQAw">
+        <feature xsi:type="ecore:EReference" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//AbstractVariablesContainer/type"/>
+      </storyPatternLinks>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_Q3Ms1l5XEeyclrxdILlQAw" name="source" outgoingLinks="_Q3Ms2F5XEeyclrxdILlQAw" bindingType="CAN_BE_BOUND">
+        <type xsi:type="ecore:EClass" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//FieldDeclaration"/>
+      </storyPatternObjects>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_Q3Ms115XEeyclrxdILlQAw" name="target" incomingLinks="_Q3Ms2F5XEeyclrxdILlQAw" bindingType="CAN_BE_BOUND">
+        <type xsi:type="ecore:EClass" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//TypeAccess"/>
+      </storyPatternObjects>
+    </pattern>
+  </ownedNodes>
+  <ownedNodes>
+    <dependencies node="//@ownedNodes.7" indexConstraint="_Q3Ms3F5XEeyclrxdILlQAw">
+      <mappings parentVertex="_Q3Ms1l5XEeyclrxdILlQAw" childVertex="_Q3Ms2l5XEeyclrxdILlQAw"/>
+      <mappings parentVertex="_Q3Ms115XEeyclrxdILlQAw" childVertex="_Q3Ms215XEeyclrxdILlQAw" indexPosition="1"/>
+    </dependencies>
+    <dependencies node="//@ownedNodes.1" indexConstraint="_Q3Ms3l5XEeyclrxdILlQAw">
+      <mappings parentVertex="_Q3MstV5XEeyclrxdILlQAw" childVertex="_Q3Ms3V5XEeyclrxdILlQAw" indexPosition="1"/>
+      <mappings parentVertex="_Q3Mstl5XEeyclrxdILlQAw" childVertex="_Q3Ms2l5XEeyclrxdILlQAw"/>
+    </dependencies>
+    <pattern uuid="_Q3Ms2V5XEeyclrxdILlQAw" name="strategy.1.2.1.2">
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_Q3Ms2l5XEeyclrxdILlQAw" name="node0" bindingType="CAN_BE_BOUND">
+        <type xsi:type="ecore:EClass" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//FieldDeclaration"/>
+      </storyPatternObjects>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_Q3Ms215XEeyclrxdILlQAw" name="node1" bindingType="CAN_BE_BOUND">
+        <type xsi:type="ecore:EClass" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//TypeAccess"/>
+      </storyPatternObjects>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_Q3Ms3V5XEeyclrxdILlQAw" name="node2" bindingType="CAN_BE_BOUND">
+        <type xsi:type="ecore:EClass" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//ClassDeclaration"/>
+      </storyPatternObjects>
+      <constraints xsi:type="mlexpressions:MLStringExpression" uuid="_Q3Ms3F5XEeyclrxdILlQAw" expressionString="left CONTAINS (node0, node1)" expressionLanguageID="ICL"/>
+      <constraints xsi:type="mlexpressions:MLStringExpression" uuid="_Q3Ms3l5XEeyclrxdILlQAw" expressionString="right CONTAINS (node0, node2)" expressionLanguageID="ICL"/>
+    </pattern>
+  </ownedNodes>
+  <ownedNodes>
+    <dependencies node="//@ownedNodes.3" indexConstraint="_Q3Ms4l5XEeyclrxdILlQAw">
+      <mappings parentVertex="_Q3MsvV5XEeyclrxdILlQAw" childVertex="_Q3Ms4F5XEeyclrxdILlQAw"/>
+      <mappings parentVertex="_Q3Msvl5XEeyclrxdILlQAw" childVertex="_Q3Ms4V5XEeyclrxdILlQAw" indexPosition="1"/>
+    </dependencies>
+    <dependencies node="//@ownedNodes.8" indexConstraint="_Q3Ms5V5XEeyclrxdILlQAw">
+      <mappings parentVertex="_Q3Ms2l5XEeyclrxdILlQAw" childVertex="_Q3Ms415XEeyclrxdILlQAw" indexPosition="1"/>
+      <mappings parentVertex="_Q3Ms215XEeyclrxdILlQAw" childVertex="_Q3Ms4F5XEeyclrxdILlQAw"/>
+      <mappings parentVertex="_Q3Ms3V5XEeyclrxdILlQAw" childVertex="_Q3Ms5F5XEeyclrxdILlQAw" indexPosition="2"/>
+    </dependencies>
+    <pattern uuid="_Q3Ms315XEeyclrxdILlQAw" name="strategy.1.2.1">
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_Q3Ms4F5XEeyclrxdILlQAw" name="node0" bindingType="CAN_BE_BOUND">
+        <type xsi:type="ecore:EClass" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//TypeAccess"/>
+      </storyPatternObjects>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_Q3Ms4V5XEeyclrxdILlQAw" name="node1" bindingType="CAN_BE_BOUND">
+        <type xsi:type="ecore:EClass" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//ClassDeclaration"/>
+      </storyPatternObjects>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_Q3Ms415XEeyclrxdILlQAw" name="node2" bindingType="CAN_BE_BOUND">
+        <type xsi:type="ecore:EClass" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//FieldDeclaration"/>
+      </storyPatternObjects>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_Q3Ms5F5XEeyclrxdILlQAw" name="node3" bindingType="CAN_BE_BOUND">
+        <type xsi:type="ecore:EClass" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//ClassDeclaration"/>
+      </storyPatternObjects>
+      <constraints xsi:type="mlexpressions:MLStringExpression" uuid="_Q3Ms4l5XEeyclrxdILlQAw" expressionString="left CONTAINS (node0, node1)" expressionLanguageID="ICL"/>
+      <constraints xsi:type="mlexpressions:MLStringExpression" uuid="_Q3Ms5V5XEeyclrxdILlQAw" expressionString="right CONTAINS (node0, node2, node3)" expressionLanguageID="ICL"/>
+    </pattern>
+  </ownedNodes>
+  <ownedNodes>
+    <dependencies node="//@ownedNodes.1" indexConstraint="_Q3Ms6V5XEeyclrxdILlQAw">
+      <mappings parentVertex="_Q3MstV5XEeyclrxdILlQAw" childVertex="_Q3Ms515XEeyclrxdILlQAw"/>
+      <mappings parentVertex="_Q3Mstl5XEeyclrxdILlQAw" childVertex="_Q3Ms6F5XEeyclrxdILlQAw" indexPosition="1"/>
+    </dependencies>
+    <dependencies node="//@ownedNodes.6" indexConstraint="_Q3Ms7V5XEeyclrxdILlQAw">
+      <mappings parentVertex="_Q3Mszl5XEeyclrxdILlQAw" childVertex="_Q3Ms6l5XEeyclrxdILlQAw" indexPosition="2"/>
+      <mappings parentVertex="_Q3Msz15XEeyclrxdILlQAw" childVertex="_Q3Ms6F5XEeyclrxdILlQAw"/>
+      <mappings parentVertex="_Q3Ms0V5XEeyclrxdILlQAw" childVertex="_Q3Ms615XEeyclrxdILlQAw" indexPosition="3"/>
+      <mappings parentVertex="_Q3Ms0l5XEeyclrxdILlQAw" childVertex="_Q3Ms7F5XEeyclrxdILlQAw" indexPosition="4"/>
+      <mappings parentVertex="_Q3Ms015XEeyclrxdILlQAw" childVertex="_Q3Ms515XEeyclrxdILlQAw" indexPosition="1"/>
+    </dependencies>
+    <pattern uuid="_Q3Ms5l5XEeyclrxdILlQAw" name="strategy.1.2.2">
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_Q3Ms515XEeyclrxdILlQAw" name="node0" bindingType="CAN_BE_BOUND">
+        <type xsi:type="ecore:EClass" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//ClassDeclaration"/>
+      </storyPatternObjects>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_Q3Ms6F5XEeyclrxdILlQAw" name="node1" bindingType="CAN_BE_BOUND">
+        <type xsi:type="ecore:EClass" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//FieldDeclaration"/>
+      </storyPatternObjects>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_Q3Ms6l5XEeyclrxdILlQAw" name="node2" bindingType="CAN_BE_BOUND">
+        <type xsi:type="ecore:EClass" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//MethodDeclaration"/>
+      </storyPatternObjects>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_Q3Ms615XEeyclrxdILlQAw" name="node3" bindingType="CAN_BE_BOUND">
+        <type xsi:type="ecore:EClass" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//ClassDeclaration"/>
+      </storyPatternObjects>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_Q3Ms7F5XEeyclrxdILlQAw" name="node4" bindingType="CAN_BE_BOUND">
+        <type xsi:type="ecore:EClass" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//TypeAccess"/>
+      </storyPatternObjects>
+      <constraints xsi:type="mlexpressions:MLStringExpression" uuid="_Q3Ms6V5XEeyclrxdILlQAw" expressionString="left CONTAINS (node0, node1)" expressionLanguageID="ICL"/>
+      <constraints xsi:type="mlexpressions:MLStringExpression" uuid="_Q3Ms7V5XEeyclrxdILlQAw" expressionString="right CONTAINS (node1, node0, node2, node3, node4)" expressionLanguageID="ICL"/>
+    </pattern>
+  </ownedNodes>
+  <ownedNodes>
+    <dependencies node="//@ownedNodes.9" indexConstraint="_Q3Ms815XEeyclrxdILlQAw">
+      <mappings parentVertex="_Q3Ms4F5XEeyclrxdILlQAw" childVertex="_Q3Ms715XEeyclrxdILlQAw" indexPosition="1"/>
+      <mappings parentVertex="_Q3Ms4V5XEeyclrxdILlQAw" childVertex="_Q3Ms8F5XEeyclrxdILlQAw"/>
+      <mappings parentVertex="_Q3Ms415XEeyclrxdILlQAw" childVertex="_Q3Ms8V5XEeyclrxdILlQAw" indexPosition="2"/>
+      <mappings parentVertex="_Q3Ms5F5XEeyclrxdILlQAw" childVertex="_Q3Ms8l5XEeyclrxdILlQAw" indexPosition="3"/>
+    </dependencies>
+    <dependencies node="//@ownedNodes.10" indexConstraint="_Q3Ms-F5XEeyclrxdILlQAw">
+      <mappings parentVertex="_Q3Ms515XEeyclrxdILlQAw" childVertex="_Q3Ms8F5XEeyclrxdILlQAw"/>
+      <mappings parentVertex="_Q3Ms6F5XEeyclrxdILlQAw" childVertex="_Q3Ms9F5XEeyclrxdILlQAw" indexPosition="1"/>
+      <mappings parentVertex="_Q3Ms6l5XEeyclrxdILlQAw" childVertex="_Q3Ms9V5XEeyclrxdILlQAw" indexPosition="2"/>
+      <mappings parentVertex="_Q3Ms615XEeyclrxdILlQAw" childVertex="_Q3Ms9l5XEeyclrxdILlQAw" indexPosition="3"/>
+      <mappings parentVertex="_Q3Ms7F5XEeyclrxdILlQAw" childVertex="_Q3Ms915XEeyclrxdILlQAw" indexPosition="4"/>
+    </dependencies>
+    <pattern uuid="_Q3Ms7l5XEeyclrxdILlQAw" name="strategy.1.2">
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_Q3Ms715XEeyclrxdILlQAw" name="node0" bindingType="CAN_BE_BOUND">
+        <type xsi:type="ecore:EClass" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//TypeAccess"/>
+      </storyPatternObjects>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_Q3Ms8F5XEeyclrxdILlQAw" name="node1" bindingType="CAN_BE_BOUND">
+        <type xsi:type="ecore:EClass" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//ClassDeclaration"/>
+      </storyPatternObjects>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_Q3Ms8V5XEeyclrxdILlQAw" name="node2" bindingType="CAN_BE_BOUND">
+        <type xsi:type="ecore:EClass" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//FieldDeclaration"/>
+      </storyPatternObjects>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_Q3Ms8l5XEeyclrxdILlQAw" name="node3" bindingType="CAN_BE_BOUND">
+        <type xsi:type="ecore:EClass" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//ClassDeclaration"/>
+      </storyPatternObjects>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_Q3Ms9F5XEeyclrxdILlQAw" name="node4" bindingType="CAN_BE_BOUND">
+        <type xsi:type="ecore:EClass" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//FieldDeclaration"/>
+      </storyPatternObjects>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_Q3Ms9V5XEeyclrxdILlQAw" name="node5" bindingType="CAN_BE_BOUND">
+        <type xsi:type="ecore:EClass" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//MethodDeclaration"/>
+      </storyPatternObjects>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_Q3Ms9l5XEeyclrxdILlQAw" name="node6" bindingType="CAN_BE_BOUND">
+        <type xsi:type="ecore:EClass" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//ClassDeclaration"/>
+      </storyPatternObjects>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_Q3Ms915XEeyclrxdILlQAw" name="node7" bindingType="CAN_BE_BOUND">
+        <type xsi:type="ecore:EClass" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//TypeAccess"/>
+      </storyPatternObjects>
+      <constraints xsi:type="mlexpressions:MLStringExpression" uuid="_Q3Ms815XEeyclrxdILlQAw" expressionString="left CONTAINS (node1, node0, node2, node3)" expressionLanguageID="ICL"/>
+      <constraints xsi:type="mlexpressions:MLStringExpression" uuid="_Q3Ms-F5XEeyclrxdILlQAw" expressionString="right CONTAINS (node1, node4, node5, node6, node7)" expressionLanguageID="ICL"/>
+    </pattern>
+  </ownedNodes>
+  <ownedNodes>
+    <dependencies node="//@ownedNodes.6" indexConstraint="_Q3Ms_15XEeyclrxdILlQAw">
+      <mappings parentVertex="_Q3Mszl5XEeyclrxdILlQAw" childVertex="_Q3Ms-l5XEeyclrxdILlQAw" indexPosition="2"/>
+      <mappings parentVertex="_Q3Msz15XEeyclrxdILlQAw" childVertex="_Q3Ms-15XEeyclrxdILlQAw"/>
+      <mappings parentVertex="_Q3Ms0V5XEeyclrxdILlQAw" childVertex="_Q3Ms_F5XEeyclrxdILlQAw" indexPosition="3"/>
+      <mappings parentVertex="_Q3Ms0l5XEeyclrxdILlQAw" childVertex="_Q3Ms_V5XEeyclrxdILlQAw" indexPosition="4"/>
+      <mappings parentVertex="_Q3Ms015XEeyclrxdILlQAw" childVertex="_Q3Ms_l5XEeyclrxdILlQAw" indexPosition="1"/>
+    </dependencies>
+    <dependencies node="//@ownedNodes.11" indexConstraint="_Q3MtBl5XEeyclrxdILlQAw">
+      <mappings parentVertex="_Q3Ms715XEeyclrxdILlQAw" childVertex="_Q3MtAF5XEeyclrxdILlQAw" indexPosition="2"/>
+      <mappings parentVertex="_Q3Ms8F5XEeyclrxdILlQAw" childVertex="_Q3Ms_l5XEeyclrxdILlQAw"/>
+      <mappings parentVertex="_Q3Ms8V5XEeyclrxdILlQAw" childVertex="_Q3MtAV5XEeyclrxdILlQAw" indexPosition="3"/>
+      <mappings parentVertex="_Q3Ms8l5XEeyclrxdILlQAw" childVertex="_Q3MtAl5XEeyclrxdILlQAw" indexPosition="4"/>
+      <mappings parentVertex="_Q3Ms9F5XEeyclrxdILlQAw" childVertex="_Q3Ms-15XEeyclrxdILlQAw" indexPosition="1"/>
+      <mappings parentVertex="_Q3Ms9V5XEeyclrxdILlQAw" childVertex="_Q3MtA15XEeyclrxdILlQAw" indexPosition="5"/>
+      <mappings parentVertex="_Q3Ms9l5XEeyclrxdILlQAw" childVertex="_Q3MtBF5XEeyclrxdILlQAw" indexPosition="6"/>
+      <mappings parentVertex="_Q3Ms915XEeyclrxdILlQAw" childVertex="_Q3MtBV5XEeyclrxdILlQAw" indexPosition="7"/>
+    </dependencies>
+    <pattern uuid="_Q3Ms-V5XEeyclrxdILlQAw" name="strategy.1">
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_Q3Ms-l5XEeyclrxdILlQAw" name="node0" bindingType="CAN_BE_BOUND">
+        <type xsi:type="ecore:EClass" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//MethodDeclaration"/>
+      </storyPatternObjects>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_Q3Ms-15XEeyclrxdILlQAw" name="node1" bindingType="CAN_BE_BOUND">
+        <type xsi:type="ecore:EClass" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//MethodDeclaration"/>
+      </storyPatternObjects>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_Q3Ms_F5XEeyclrxdILlQAw" name="node2" bindingType="CAN_BE_BOUND">
+        <type xsi:type="ecore:EClass" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//ClassDeclaration"/>
+      </storyPatternObjects>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_Q3Ms_V5XEeyclrxdILlQAw" name="node3" bindingType="CAN_BE_BOUND">
+        <type xsi:type="ecore:EClass" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//TypeAccess"/>
+      </storyPatternObjects>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_Q3Ms_l5XEeyclrxdILlQAw" name="node4" bindingType="CAN_BE_BOUND">
+        <type xsi:type="ecore:EClass" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//ClassDeclaration"/>
+      </storyPatternObjects>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_Q3MtAF5XEeyclrxdILlQAw" name="node5" bindingType="CAN_BE_BOUND">
+        <type xsi:type="ecore:EClass" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//TypeAccess"/>
+      </storyPatternObjects>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_Q3MtAV5XEeyclrxdILlQAw" name="node6" bindingType="CAN_BE_BOUND">
+        <type xsi:type="ecore:EClass" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//FieldDeclaration"/>
+      </storyPatternObjects>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_Q3MtAl5XEeyclrxdILlQAw" name="node7" bindingType="CAN_BE_BOUND">
+        <type xsi:type="ecore:EClass" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//ClassDeclaration"/>
+      </storyPatternObjects>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_Q3MtA15XEeyclrxdILlQAw" name="node8" bindingType="CAN_BE_BOUND">
+        <type xsi:type="ecore:EClass" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//MethodDeclaration"/>
+      </storyPatternObjects>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_Q3MtBF5XEeyclrxdILlQAw" name="node9" bindingType="CAN_BE_BOUND">
+        <type xsi:type="ecore:EClass" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//ClassDeclaration"/>
+      </storyPatternObjects>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_Q3MtBV5XEeyclrxdILlQAw" name="node10" bindingType="CAN_BE_BOUND">
+        <type xsi:type="ecore:EClass" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//TypeAccess"/>
+      </storyPatternObjects>
+      <constraints xsi:type="mlexpressions:MLStringExpression" uuid="_Q3Ms_15XEeyclrxdILlQAw" expressionString="left CONTAINS (node1, node4, node0, node2, node3)" expressionLanguageID="ICL"/>
+      <constraints xsi:type="mlexpressions:MLStringExpression" uuid="_Q3MtBl5XEeyclrxdILlQAw" expressionString="right CONTAINS (node4, node1, node5, node6, node7, node8, node9, node10)" expressionLanguageID="ICL"/>
+    </pattern>
+  </ownedNodes>
+</gdn:GDN>

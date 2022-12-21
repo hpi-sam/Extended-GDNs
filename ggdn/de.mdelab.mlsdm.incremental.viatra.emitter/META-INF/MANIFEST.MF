@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Emitter
+Bundle-SymbolicName: de.mdelab.mlsdm.incremental.viatra.emitter
+Bundle-Version: 1.0.0.qualifier
+Require-Bundle: de.mdelab.mlsdm.gdn,
+ org.eclipse.viatra.query.runtime,
+ org.eclipse.viatra.query.runtime.rete
+Export-Package: de.mdelab.mlsdm.incremental.viatra.emitter

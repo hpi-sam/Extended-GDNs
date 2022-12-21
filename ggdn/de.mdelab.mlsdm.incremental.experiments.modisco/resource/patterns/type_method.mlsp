@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mlstorypatterns:StoryPattern xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:mlstorypatterns="http://www.mdelab.de/mlstorypatterns/1.0" uuid="_ClDTkCRWEe21S6Bu2lssEQ" name="Type Method">
+  <storyPatternLinks xsi:type="mlstorypatterns:StoryPatternLink" uuid="_Na6C0CRWEe21S6Bu2lssEQ" source="_JAIgoCRWEe21S6Bu2lssEQ" target="_K4SVECRWEe21S6Bu2lssEQ">
+    <feature xsi:type="ecore:EReference" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//AbstractTypeDeclaration/bodyDeclarations"/>
+  </storyPatternLinks>
+  <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_JAIgoCRWEe21S6Bu2lssEQ" name="type" outgoingLinks="_Na6C0CRWEe21S6Bu2lssEQ" bindingType="CAN_BE_BOUND">
+    <type xsi:type="ecore:EClass" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//TypeDeclaration"/>
+  </storyPatternObjects>
+  <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_K4SVECRWEe21S6Bu2lssEQ" name="method" incomingLinks="_Na6C0CRWEe21S6Bu2lssEQ" bindingType="CAN_BE_BOUND">
+    <type xsi:type="ecore:EClass" href="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java#//MethodDeclaration"/>
+  </storyPatternObjects>
+</mlstorypatterns:StoryPattern>

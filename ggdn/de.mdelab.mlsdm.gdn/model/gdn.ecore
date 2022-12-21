@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="gdn" nsURI="http://www.mdelab.de/mlsdm/gdn/1.0" nsPrefix="gdn">
+  <eClassifiers xsi:type="ecore:EClass" name="GDNNode">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="dependencies" upperBound="-1"
+        eType="#//GDNDependency" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="pattern" lowerBound="1"
+        eType="ecore:EClass ../../de.mdelab.mlstorypatterns/model/mlstorypatterns.ecore#//StoryPattern"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GDNDependency">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="node" lowerBound="1" eType="#//GDNNode"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="indexConstraint" lowerBound="1"
+        eType="ecore:EClass ../../de.mdelab.mlexpressions/model/mlexpressions.ecore#//MLStringExpression"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="mappings" upperBound="-1"
+        eType="#//GDNMapping" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="negative" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean" defaultValueLiteral="false"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GDNMapping">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="parentVertex" lowerBound="1"
+        eType="ecore:EClass ../../de.mdelab.mlstorypatterns/model/mlstorypatterns.ecore#//AbstractStoryPatternObject"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="childVertex" eType="ecore:EClass ../../de.mdelab.mlstorypatterns/model/mlstorypatterns.ecore#//AbstractStoryPatternObject"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="indexPosition" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GDN">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ownedNodes" upperBound="-1"
+        eType="#//GDNNode" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="root" lowerBound="1" eType="#//GDNNode"/>
+  </eClassifiers>
+</ecore:EPackage>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mltgg.ruleDependencyGraph="http://www.mdelab.de/mltgg/ruleDependencyGraph/1.0">
+  <mltgg.ruleDependencyGraph:RuleDependencyGraph uuid="_mfbXkSk1Ee2B0tdKr_FYJg">
+    <tggRule href="../model/ecore2java.mltgg#_gg3hYT8fEeKTTbcgLXf6Gw"/>
+    <correspondenceNodeDependencies uuid="_mfbXkik1Ee2B0tdKr_FYJg">
+      <correspondenceNode href="../model/ecore2java.mltgg#_mGiwcT8fEeKTTbcgLXf6Gw"/>
+      <producedBy uuid="_mfbXkyk1Ee2B0tdKr_FYJg">
+        <producingRule href="../model/ecore2java.mltgg#_EWn5MT8fEeKTTbcgLXf6Gw"/>
+      </producedBy>
+    </correspondenceNodeDependencies>
+  </mltgg.ruleDependencyGraph:RuleDependencyGraph>
+  <mltgg.ruleDependencyGraph:RuleDependencyGraph uuid="_mfbXlCk1Ee2B0tdKr_FYJg">
+    <tggRule href="../model/ecore2java.mltgg#_8qYpwSkoEe2YCYCZYoNLqQ"/>
+    <correspondenceNodeDependencies uuid="_mfbXlSk1Ee2B0tdKr_FYJg">
+      <correspondenceNode href="../model/ecore2java.mltgg#_rfkHECkpEe2YCYCZYoNLqQ"/>
+      <producedBy uuid="_mfbXlik1Ee2B0tdKr_FYJg">
+        <producingRule href="../model/ecore2java.mltgg#_gg3hYT8fEeKTTbcgLXf6Gw"/>
+      </producedBy>
+    </correspondenceNodeDependencies>
+  </mltgg.ruleDependencyGraph:RuleDependencyGraph>
+  <mltgg.ruleDependencyGraph:RuleDependencyGraph uuid="_mfbXlyk1Ee2B0tdKr_FYJg">
+    <tggRule href="../model/ecore2java.mltgg#_EWn5MT8fEeKTTbcgLXf6Gw"/>
+  </mltgg.ruleDependencyGraph:RuleDependencyGraph>
+</xmi:XMI>
